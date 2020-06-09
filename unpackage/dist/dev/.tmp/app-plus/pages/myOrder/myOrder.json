@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的订单",
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "u-empty": "/uview/components/u-empty/u-empty",
+    "u-popup": "/uview/components/u-popup/u-popup"
+  }
+}

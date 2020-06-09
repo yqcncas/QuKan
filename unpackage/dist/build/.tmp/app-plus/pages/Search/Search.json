@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "搜索",
+  "usingComponents": {
+    "u-empty": "/uview/components/u-empty/u-empty"
+  }
+}

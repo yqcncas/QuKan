@@ -1,0 +1,1 @@
+<view class="invite"><view class="invite-header"><view class="invite-header-top">分享趣砍APP给好友</view><view class="invite-header-bottom">好友成功下载并成为您的下级即可获得佣金</view></view><canvas class="invite-main" canvas-id="firstCanvas"></canvas><view data-event-opts="{{[['tap',[['saveCanvasImg',['$event']]]]]}}" class="invite-bottom" bindtap="__e">保存到相册</view></view>

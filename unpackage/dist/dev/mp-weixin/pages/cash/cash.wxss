@@ -1,0 +1,115 @@
+page {
+  background: #f3f3f3;
+}
+.info-input {
+  width: 100%;
+  background: #FFFFFF;
+}
+.info-input .input-item {
+  width: 720rpx;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-left: 30rpx;
+  border-bottom: 1px solid #F5F5F5;
+}
+.info-input .input-item > view:first-child {
+  font-size: 14px;
+  color: #222222;
+  width: 180rpx;
+}
+.info-input .input-item > view:last-child {
+  width: 510rpx;
+  margin-right: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 17px;
+  color: #000000;
+}
+.info-input .input-item > view:last-child input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.cash-money {
+  width: 690rpx;
+  padding: 30rpx 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+}
+.cash-money .cash-title {
+  font-size: 16px;
+  color: #333540;
+  font-weight: bold;
+}
+.cash-money .cash-input {
+  width: 690rpx;
+  height: 144rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-bottom: 1px solid #F5F5F5;
+}
+.cash-money .cash-input > view:first-child {
+  font-size: 24px;
+  color: #333540;
+  margin-right: 20rpx;
+}
+.cash-money .cash-input input {
+  width: 600rpx;
+  font-size: 30px;
+  color: #333540;
+  height: 100%;
+}
+.cash-money .cash-tips {
+  width: 690rpx;
+  margin-top: 24rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.cash-money .cash-tips > view:first-child {
+  width: 690rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 12px;
+  color: #A2A2A2;
+}
+.cash-money .cash-tips > view:first-child image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.cash-money .cash-tips > view:first-child > text:nth-child(3) {
+  font-size: 14px;
+  color: #D1000C;
+}
+.cash-money .cash-tips > view:last-child {
+  margin-top: 6rpx;
+  margin-left: 40rpx;
+  font-size: 12px;
+  color: #A2A2A2;
+}
+

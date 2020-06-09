@@ -1,0 +1,13 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "scrollIndicator": "none",
+  "pullToRefresh": {
+    "style": "circle"
+  },
+  "usingComponents": {
+    "status": "/components/Status/status",
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

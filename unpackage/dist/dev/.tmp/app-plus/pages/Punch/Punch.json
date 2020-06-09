@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-steps": "/uview/components/u-steps/u-steps",
+    "u-popup": "/uview/components/u-popup/u-popup"
+  }
+}

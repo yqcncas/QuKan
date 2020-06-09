@@ -1,0 +1,598 @@
+page::after {
+  display: none;
+}
+page {
+  width: 100%;
+  overflow-x: hidden;
+  background: red;
+}
+.randomRedBag {
+  width: 100%;
+}
+.randomRedBag .randomRedBag-top-wrapper {
+  width: 100%;
+  height: 1126rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 42rpx;
+  position: relative;
+  top: var(--status-bar-height);
+  padding-left: 30rpx;
+  padding-top: 16rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-header .img-box {
+  width: 24rpx;
+  height: 42rpx;
+  position: relative;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-header .img-box image {
+  width: 24rpx;
+  height: 42rpx;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-header .img-box::after {
+  content: '';
+  position: absolute;
+  left: -50rpx;
+  right: -50rpx;
+  top: -50rpx;
+  bottom: -50rpx;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-header .randomRedBag-header-title {
+  font-family: PingFangSC-Regular;
+  font-size: 17px;
+  color: #FFFFFF;
+  line-height: 32px;
+  margin: 0 auto;
+  -webkit-transform: translateX(-24rpx);
+          transform: translateX(-24rpx);
+}
+.randomRedBag .randomRedBag-top-wrapper .rule {
+  position: absolute;
+  right: 0;
+  top: 96rpx;
+  width: 98rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFAF00), to(#FF7C00));
+  background-image: -webkit-linear-gradient(top, #FFAF00 0%, #FF7C00 100%);
+  background-image: linear-gradient(180deg, #FFAF00 0%, #FF7C00 100%);
+  border-radius: 100px 0 0 100px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #F7F7F7;
+  text-align: center;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-title {
+  position: absolute;
+  top: 181rpx;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: PingFangSC-Medium;
+  font-size: 12px;
+  color: #FFC586;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-title .randomRedBag-title-price {
+  padding-left: 11rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main {
+  width: 490rpx;
+  height: 328rpx;
+  position: absolute;
+  left: 50%;
+  top: 278rpx;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-title {
+  width: 100%;
+  font-family: PingFangSC-Regular;
+  font-size: 17px;
+  color: #FFFFFF;
+  line-height: 32px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-title image {
+  width: 26rpx;
+  height: 20rpx;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-title .randomRedBag-main-title-text {
+  font-family: PingFangSC-Semibold;
+  font-size: 12px;
+  color: #FFD582;
+  padding-left: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-center {
+  text-align: center;
+  padding-bottom: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-center .randomRedBag-main-center-price {
+  width: 100%;
+  text-align: center;
+  padding-left: 14rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: PingFangSC-Semibold;
+  font-size: 48px;
+  color: #C9281C;
+  font-weight: bold;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-center .tixian-button {
+  width: 78rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #C9281C;
+  letter-spacing: -0.24px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFE9BD), to(#FFCF88));
+  background-image: -webkit-linear-gradient(top, #FFE9BD 0%, #FFCF88 100%);
+  background-image: linear-gradient(180deg, #FFE9BD 0%, #FFCF88 100%);
+  border-radius: 100px 0 0 100px;
+  position: absolute;
+  right: 0;
+  top: 30rpx;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-xuxian {
+  height: 2rpx;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, transparent), color-stop(50%, #F5E5E8), to(#F5E5E8));
+  background: -webkit-linear-gradient(left, transparent 0%, transparent 50%, #F5E5E8 50%, #F5E5E8 100%);
+  background: linear-gradient(to right, transparent 0%, transparent 50%, #F5E5E8 50%, #F5E5E8 100%);
+  background-size: 10rpx 1px;
+  background-repeat: repeat-x;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-time {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #C1B4B5;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-progress {
+  width: 420rpx;
+  height: 6rpx;
+  margin: 0 auto;
+  background-color: #FFD9A1;
+  border-radius: 2px;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-progress .randomRedBag-main-progress-in {
+  position: relative;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #C9281C;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-main .randomRedBag-main-progress .randomRedBag-main-progress-number {
+  position: relative;
+  left: 50%;
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #C9281C;
+  letter-spacing: -0.24px;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-footer {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  top: 660rpx;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-footer .randomRedBag-footer-top {
+  width: 420rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #FEDE69;
+  -webkit-box-shadow: inset 0 0 3px 0 rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 0 3px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: PingFangSC-Semibold;
+  font-size: 12px;
+  color: #E04E35;
+  text-align: center;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-footer .randomRedBag-footer-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-footer .randomRedBag-footer-bottom .randomRedBag-footer-bottom-left {
+  width: 28rpx;
+  height: 26rpx;
+}
+.randomRedBag .randomRedBag-top-wrapper .randomRedBag-footer .randomRedBag-footer-bottom .randomRedBag-footer-bottom-right {
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding-left: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-list {
+  width: 100%;
+  height: 41%;
+  position: fixed;
+  bottom: 0;
+  background-image: -webkit-linear-gradient(296deg, #FFE7B7 0%, #FFCB80 95%);
+  background-image: linear-gradient(154deg, #FFE7B7 0%, #FFCB80 95%);
+  border-radius: 17px 17px 0 0;
+  padding: 30rpx;
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-header {
+  height: 120rpx;
+  border-width: 0 0 1rpx 0 ;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5px;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-header .randomRedBag-list-header-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-header .randomRedBag-list-header-box .small-circle {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: #E88A00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-header .randomRedBag-list-header-box .big-circle {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #E88A00;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-header .randomRedBag-list-header-box .big-circle.mgl {
+  margin-left: 10rpx;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-header .randomRedBag-list-header-box .big-circle.mgr {
+  margin-right: 10rpx;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-header .randomRedBag-list-header-box .randomRedBag-list-header-text {
+  width: 138rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 14px;
+  color: #E88A00;
+  letter-spacing: -0.34px;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-header .randomRedBag-list-header-tip {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FF9800;
+  letter-spacing: -0.29px;
+  text-align: center;
+  padding-top: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 20rpx 0;
+  border-width: 0 0 1rpx 0 ;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-main:last-child {
+  border: 0;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-main .randomRedBag-list-main-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-main .randomRedBag-list-main-left .randomRedBag-list-main-left-avatar image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-main .randomRedBag-list-main-left .randomRedBag-list-main-left-userInfo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-main .randomRedBag-list-main-left .randomRedBag-list-main-left-userInfo .randomRedBag-list-main-left-userInfo-top {
+  font-family: PingFangSC-Semibold;
+  font-size: 14px;
+  color: #FF9800;
+  letter-spacing: -0.34px;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-main .randomRedBag-list-main-left .randomRedBag-list-main-left-userInfo .randomRedBag-list-main-left-userInfo-bottom {
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #FF9800;
+  letter-spacing: -0.24px;
+}
+.randomRedBag .randomRedBag-list .randomRedBag-list-main .randomRedBag-list-main-right {
+  font-family: PingFangSC-Semibold;
+  font-size: 14px;
+  color: #FF9800;
+  font-weight: bold;
+  letter-spacing: -0.34px;
+}
+.randomRedBag .copy-wrapper .copy-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 46rpx;
+}
+.randomRedBag .copy-wrapper .copy-img image {
+  width: 176rpx;
+  height: 132rpx;
+}
+.randomRedBag .copy-wrapper .copy-title {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #222222;
+  letter-spacing: -0.34px;
+  text-align: center;
+  margin: 0 82rpx;
+}
+.randomRedBag .copy-wrapper .copy-title.mgt {
+  margin-top: 30rpx;
+}
+.randomRedBag .copy-wrapper .copy-title ._span {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #C9281C;
+  letter-spacing: -0.34px;
+}
+.randomRedBag .copy-wrapper .copy-button {
+  width: 386rpx;
+  height: 70rpx;
+  background: #C9281C;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 42rpx;
+}
+.randomRedBag .copy-wrapper .copy-button .confirm-button-left image {
+  width: 42rpx;
+  height: 32rpx;
+}
+.randomRedBag .copy-wrapper .copy-button .confirm-button-right {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: -0.34px;
+}
+.randomRedBag .mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.randomRedBag .shareGroup-wrapper {
+  width: 504rpx;
+  height: 642rpx;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.randomRedBag .shareGroup {
+  width: 504rpx;
+  height: 642rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.randomRedBag .shareGroup .sharegroup-header {
+  padding-top: 60rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #FF9800;
+  letter-spacing: -0.34px;
+  text-align: center;
+}
+.randomRedBag .shareGroup .sharegroup-header .shareGroup-center {
+  font-size: 12px;
+}
+.randomRedBag .shareGroup .sharegroup-header .sharegroup-price {
+  padding-top: 40rpx;
+  padding-bottom: 176rpx;
+  font-size: 32px;
+  color: #C9281C;
+}
+.randomRedBag .shareGroup .sharegroup-bottom {
+  font-size: 14px;
+  color: #FFD47F;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.randomRedBag .shareGroup .sharegroup-bottom .sharegroup-bottom-button {
+  width: 414rpx;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFE38D), to(#FFBD3F));
+  background-image: -webkit-linear-gradient(top, #FFE38D 0%, #FFBD3F 100%);
+  background-image: linear-gradient(180deg, #FFE38D 0%, #FFBD3F 100%);
+  -webkit-box-shadow: 0 2px 3px 0 rgba(203, 41, 16, 0.5);
+          box-shadow: 0 2px 3px 0 rgba(203, 41, 16, 0.5);
+  border-radius: 4px;
+  font-size: 14px;
+  color: #EC4E36;
+  margin-top: 30rpx;
+}
+.randomRedBag .shareGroup .sharegroup-bottom .sharegroup-bottom-button image {
+  width: 42rpx;
+  height: 32rpx;
+}
+.randomRedBag .closeShareGroup {
+  width: 50rpx;
+  height: 50rpx;
+  position: fixed;
+  right: 134rpx;
+  top: var(--status-bar-height);
+  -webkit-transform: translateY(270rpx);
+          transform: translateY(270rpx);
+  z-index: 99999;
+}
+.randomRedBag .closeShareGroup image {
+  width: 100%;
+  height: 100%;
+}
+.randomRedBag .share-success {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.randomRedBag .share-success .share-success-title {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFAD03), to(#FFC500));
+  background-image: -webkit-linear-gradient(top, #FFAD03 0%, #FFC500 100%);
+  background-image: linear-gradient(180deg, #FFAD03 0%, #FFC500 100%);
+}
+.randomRedBag .share-success image {
+  width: 692rpx;
+  height: 530rpx;
+}
+.randomRedBag .share-success .share-success-button {
+  width: 448rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFE38D), to(#FFBD3F));
+  background-image: -webkit-linear-gradient(top, #FFE38D 0%, #FFBD3F 100%);
+  background-image: linear-gradient(180deg, #FFE38D 0%, #FFBD3F 100%);
+  -webkit-box-shadow: 0 2px 3px 0 rgba(203, 41, 16, 0.5);
+          box-shadow: 0 2px 3px 0 rgba(203, 41, 16, 0.5);
+  border-radius: 22.5px;
+  font-family: PingFangSC-Medium;
+  font-size: 17px;
+  color: #EC5237;
+  letter-spacing: -0.41px;
+  text-align: center;
+  margin: 0 auto;
+}
+.randomRedBag .closeSuccess {
+  width: 50rpx;
+  height: 50rpx;
+  position: fixed;
+  right: 134rpx;
+  top: var(--status-bar-height);
+  -webkit-transform: translateY(270rpx);
+          transform: translateY(270rpx);
+  z-index: 99999;
+}
+.randomRedBag .closeSuccess image {
+  width: 100%;
+  height: 100%;
+}
+

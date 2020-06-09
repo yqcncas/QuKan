@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "scrollIndicator": "none",
+  "titleNView": {
+    "titleText": "",
+    "type": "transparent"
+  },
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser"
+  }
+}

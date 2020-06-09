@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-number-box": "/uview/components/u-number-box/u-number-box",
+    "u-popup": "/uview/components/u-popup/u-popup"
+  }
+}

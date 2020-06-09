@@ -1,0 +1,49 @@
+page::after {
+  display: none;
+}
+.inviteFriends {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.inviteFriends .code {
+  font-family: PingFangSC-Medium;
+  font-size: 24px;
+  color: #FFD47F;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 780rpx);
+          transform: translate(-50%, 780rpx);
+  top: var(--status-bar-height);
+  font-weight: bold;
+}
+.inviteFriends .invite-main-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: absolute;
+  bottom: 80rpx;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.inviteFriends .invite-main-box image {
+  width: 290rpx;
+  height: 290rpx;
+}
+.inviteFriends .invite-main-box .invite-main-bottom {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #FFD47F;
+  margin-top: 20rpx;
+}
+

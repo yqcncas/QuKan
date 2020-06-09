@@ -1,0 +1,168 @@
+page::after {
+  display: none;
+}
+.newBargin {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.newBargin .newBargin-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-bottom: 30rpx;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.newBargin .newBargin-wrapper .newBargin-item {
+  width: 690rpx;
+  height: 310rpx;
+  background: #FFFFFF;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 30rpx;
+  margin-top: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-header .newBargin-item-header-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-header .newBargin-item-header-left .newBargin-item-header-left-userInfo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-header .newBargin-item-header-left .newBargin-item-header-left-userInfo .user-avatar image {
+  width: 40rpx;
+  height: 40rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-header .newBargin-item-header-left .newBargin-item-header-left-userInfo .user-name {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #222222;
+  padding-left: 12rpx;
+  padding-right: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-header .newBargin-item-header-left .newBargin-item-header-left-time {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #A2A2A2;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-header .newBargin-item-header-right {
+  width: 102rpx;
+  height: 62rpx;
+  line-height: 62rpx;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF7360), to(#C9281C));
+  background-image: -webkit-linear-gradient(top, #FF7360 0%, #C9281C 100%);
+  background-image: linear-gradient(180deg, #FF7360 0%, #C9281C 100%);
+  -webkit-border-radius: 4px 0 18px 0;
+          border-radius: 4px 0 18px 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: -0.29px;
+  -webkit-transform: translate(30rpx, -30rpx);
+          transform: translate(30rpx, -30rpx);
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-left image {
+  width: 180rpx;
+  height: 180rpx;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .newBargin-item-center-right-title {
+  font-weight: bold;
+  font-family: PingFangSC-Semibold;
+  font-size: 14px;
+  color: #222222;
+  letter-spacing: -0.34px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .marketPrice,
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .payPrice {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #A2A2A2;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .marketPrice {
+  padding-top: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .payPrice {
+  padding-top: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .newBargin-item-center-right-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .newBargin-item-center-right-bottom .newBargin-item-center-right-bottom-left .newBargin-item-center-right-bottom-left-text {
+  font-family: PingFangSC-Semibold;
+  font-size: 14px;
+  color: #222222;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .newBargin-item-center-right-bottom .newBargin-item-center-right-bottom-left .newBargin-item-center-right-bottom-left-text.save {
+  letter-spacing: -0.34px;
+  font-weight: bold;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .newBargin-item-center-right-bottom .newBargin-item-center-right-bottom-left .newBargin-item-center-right-bottom-left-price {
+  font-family: PingFangSC-Semibold;
+  font-weight: bold;
+  font-size: 17px;
+  color: #C9281C;
+  padding-left: 10rpx;
+  padding-right: 6rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.newBargin .newBargin-wrapper .newBargin-item .newBargin-item-center .newBargin-item-center-right .newBargin-item-center-right-bottom .newBargin-item-center-right-bottom-right {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FFA900;
+}
+

@@ -1,0 +1,94 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+page{
+	width: 100%;
+	height: 100%;
+	background-color: #f3f3f3;
+}
+/* 顶部阴影 */
+page::after {
+	content: "";
+	position: fixed;
+	top: 0;
+
+
+
+	left: 0;
+	-webkit-box-shadow: inset 0 4rpx 8rpx 0 rgb(244, 244, 244);
+	        box-shadow: inset 0 4rpx 8rpx 0 rgb(244, 244, 244);
+	z-index: 999;
+	width: 750rpx;
+	height: 8rpx;
+}
+.placeHolderClass{
+	font-size: 14px;
+	color: rgba(9,2,62,0.30);
+}
+.bottomRedButton{
+	width: 750rpx;
+	height: 90rpx;
+	background: #C9281C;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	font-size: 14px;
+	color: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+}
+.line-30{
+	height: 30rpx;
+	width: 100%;
+}
+swiper .wx-swiper-dot,
+swiper .a-swiper-dot,
+swiper .uni-swiper-dot {
+	background: rgba(0,0,0,0.20);
+	width: 12rpx;
+	height: 12rpx;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0 8rpx !important;
+}
+swiper .wx-swiper-dot.wx-swiper-dot-active,
+swiper .a-swiper-dot.a-swiper-dot-active,
+swiper .uni-swiper-dot.uni-swiper-dot-active {
+	background: #EC584E;
+	border: 1px solid #EC584E;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;  
+    width: 0 !important;  
+    height: 0 !important;  
+    -webkit-appearance: none;  
+    color: transparent;
+    background: transparent;
+}
+
+

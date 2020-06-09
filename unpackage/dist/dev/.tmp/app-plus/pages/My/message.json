@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "消息",
+  "usingComponents": {
+    "u-empty": "/uview/components/u-empty/u-empty",
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

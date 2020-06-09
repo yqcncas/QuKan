@@ -1,0 +1,93 @@
+page::after {
+  display: none;
+}
+.activityArea {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.activityArea .activityArea-header {
+  position: fixed;
+  top: 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.activityArea .activityArea-header .img-box {
+  width: 24rpx;
+  height: 42rpx;
+  position: relative;
+}
+.activityArea .activityArea-header .img-box image {
+  width: 24rpx;
+  height: 42rpx;
+  margin-left: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.activityArea .activityArea-header .img-box::after {
+  content: '';
+  position: absolute;
+  left: -50rpx;
+  top: -50rpx;
+  right: -50rpx;
+  bottom: -50rpx;
+}
+.activityArea .activityArea-header .activityArea-header-title {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 17px;
+  color: #FFFFFF;
+  line-height: 32px;
+  -webkit-transform: translateX(-24rpx);
+          transform: translateX(-24rpx);
+}
+.activityArea .activityArea-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 684rpx);
+          transform: translate(-50%, 684rpx);
+  top: 25px;
+}
+.activityArea .activityArea-center .activityArea-center-header image {
+  width: 90rpx;
+  height: 90rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.activityArea .activityArea-center .activityArea-center-center {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FFD133;
+  padding-top: 24rpx;
+  padding-bottom: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.activityArea .activityArea-center .activityArea-center-footer {
+  font-family: PingFangSC-Semibold;
+  font-size: 17px;
+  color: #FFD133;
+}
+

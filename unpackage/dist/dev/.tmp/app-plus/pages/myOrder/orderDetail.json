@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "usingComponents": {
+    "u-popup": "/uview/components/u-popup/u-popup"
+  }
+}

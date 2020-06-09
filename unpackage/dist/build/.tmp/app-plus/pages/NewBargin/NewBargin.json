@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "最新成交",
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

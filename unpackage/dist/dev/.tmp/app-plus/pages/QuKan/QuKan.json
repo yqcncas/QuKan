@@ -1,0 +1,10 @@
+{
+  "scrollIndicator": "none",
+  "titleNView": {
+    "titleText": "趣砍详情",
+    "type": "transparent"
+  },
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser"
+  }
+}

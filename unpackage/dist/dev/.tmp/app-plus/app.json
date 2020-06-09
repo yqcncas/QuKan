@@ -1,0 +1,101 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Classify/Classify",
+    "pages/Find/Find",
+    "pages/Market/Market",
+    "pages/My/My",
+    "pages/My/userInfo",
+    "pages/My/editUserName",
+    "pages/My/myAddress",
+    "pages/Bargaing/Bargaing",
+    "pages/NewBargin/NewBargin",
+    "pages/ActivityArea/ActivityArea",
+    "pages/DrawRecord/DrawRecord",
+    "pages/Invite/Invite",
+    "pages/InviteFriends/InviteFriends",
+    "pages/Lottery/Lottery",
+    "pages/RandomRedBag/RandomRedBag",
+    "pages/Search/Search",
+    "pages/AffirmOrder/AffirmOrder",
+    "pages/PopularShop/PopularShop",
+    "pages/OptimizationShop/OptimizationShop",
+    "pages/QuKan/QuKan",
+    "pages/Bids/Bids",
+    "pages/Login/Login",
+    "pages/My/editAddress",
+    "pages/My/setting",
+    "pages/My/problem",
+    "pages/My/message",
+    "pages/My/commission",
+    "pages/cash/cash",
+    "pages/My/beanDetail",
+    "pages/My/integral",
+    "pages/myOrder/myOrder",
+    "pages/myOrder/orderDetail",
+    "pages/myOrder/evaluate",
+    "pages/myTeam/myTeam",
+    "pages/myCollection/myCollection",
+    "pages/Punch/Punch",
+    "pages/article/article",
+    "pages/My/bindUp",
+    "pages/ShopDetailArt/ShopDeatailArt"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8",
+    "bounce": "none"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#222222",
+    "selectedColor": "#C9281C",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/tabbar/home.png",
+        "selectedIconPath": "static/image/tabbar/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/Classify/Classify",
+        "iconPath": "static/image/tabbar/classify.png",
+        "selectedIconPath": "static/image/tabbar/classify-active.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/Find/Find",
+        "iconPath": "static/image/tabbar/find.png",
+        "selectedIconPath": "static/image/tabbar/find-active.png",
+        "text": "充值"
+      },
+      {
+        "pagePath": "pages/Market/Market",
+        "iconPath": "static/image/tabbar/market.png",
+        "selectedIconPath": "static/image/tabbar/market-active.png",
+        "text": "大市场"
+      },
+      {
+        "pagePath": "pages/My/My",
+        "iconPath": "static/image/tabbar/my.png",
+        "selectedIconPath": "static/image/tabbar/my-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "趣砍",
+  "compilerVersion": "2.6.16",
+  "usingComponents": {
+    "status": "/components/Status/status",
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

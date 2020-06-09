@@ -1,0 +1,197 @@
+page::after {
+  display: none;
+}
+page {
+  background-color: #fff;
+}
+.optimizationshop {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 142rpx;
+}
+.optimizationshop .optimizationshop-top {
+  width: 100%;
+  height: 750rpx;
+  position: absolute;
+  background-color: #fff;
+}
+.optimizationshop .optimizationshop-top .optimizationshop-banner {
+  height: 750rpx;
+}
+.optimizationshop .optimizationshop-top .optimizationshop-banner .optimizationshop-item image {
+  width: 750rpx;
+  height: 700rpx;
+}
+.optimizationshop .optimizationshop-top .optimizationshop-center {
+  background-color: #fff;
+  padding: 30rpx;
+  padding-top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.optimizationshop .optimizationshop-top .optimizationshop-center .optimizationshop-center-top {
+  font-family: PingFangSC-Medium;
+  font-size: 17px;
+  color: #222222;
+  letter-spacing: -0.41px;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.optimizationshop .optimizationshop-top .optimizationshop-center .optimizationshop-center-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-top: 22rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.optimizationshop .optimizationshop-top .optimizationshop-center .optimizationshop-center-bottom .optimizationshop-center-bottom-left {
+  font-family: PingFangSC-Semibold;
+  font-size: 22px;
+  color: #C9281C;
+  letter-spacing: -0.53px;
+}
+.optimizationshop .optimizationshop-top .optimizationshop-center .optimizationshop-center-bottom .optimizationshop-center-bottom-right {
+  font-family: TaipeiSansTCBeta-Regular;
+  font-size: 14px;
+  color: #FFA900;
+  letter-spacing: -0.34px;
+  padding-left: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.optimizationshop .optimizationshop-top .shopDetail {
+  width: 100%;
+  height: 112rpx;
+  background-color: #f7f7f7;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.optimizationshop .optimizationshop-top .shopDetail .shopDetail-line {
+  width: 40rpx;
+  height: 2rpx;
+  background: #D8D8D8;
+  border-radius: 0.5px;
+}
+.optimizationshop .optimizationshop-top .shopDetail .shopDetail-text {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #222222;
+  padding: 0 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.optimizationshop .optimizationshop-top .rich-text {
+  padding-bottom: 130rpx;
+}
+.optimizationshop .optimizationshop-footer {
+  width: 100%;
+  height: 112rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left .optimizationshop-footer-left-img image {
+  width: 82rpx;
+  height: 82rpx;
+}
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left .optimizationshop-footer-left-right .optimizationshop-footer-left-right-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left .optimizationshop-footer-left-right .optimizationshop-footer-left-right-top text:nth-child(1) {
+  font-family: TaipeiSansTCBeta-Regular;
+  font-size: 12px;
+  color: #A2A2A2;
+  letter-spacing: -0.29px;
+  text-align: justify;
+}
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left .optimizationshop-footer-left-right .optimizationshop-footer-left-right-top text:nth-child(2) {
+  font-family: PingFangSC-Semibold;
+  font-size: 17px;
+  color: #C9281C;
+  letter-spacing: -0.41px;
+  text-align: justify;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left .optimizationshop-footer-left-right .optimizationshop-footer-left-right-bottom text:nth-child(1),
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left .optimizationshop-footer-left-right .optimizationshop-footer-left-right-bottom text:nth-child(3) {
+  font-family: TaipeiSansTCBeta-Regular;
+  font-size: 12px;
+  color: #A2A2A2;
+  letter-spacing: -0.29px;
+  text-align: justify;
+  margin-right: 10rpx;
+}
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left .optimizationshop-footer-left-right .optimizationshop-footer-left-right-bottom text:nth-child(2),
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left .optimizationshop-footer-left-right .optimizationshop-footer-left-right-bottom text:nth-child(4) {
+  font-family: TaipeiSansTCBeta-Regular;
+  font-size: 12px;
+  color: #222222;
+  letter-spacing: -0.29px;
+  text-align: justify;
+}
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-left .optimizationshop-footer-left-right .optimizationshop-footer-left-right-bottom text:nth-child(3) {
+  margin-left: 20rpx;
+}
+.optimizationshop .optimizationshop-footer .optimizationshop-footer-right {
+  width: 250rpx;
+  height: 100%;
+  line-height: 112rpx;
+  text-align: center;
+  background: #C9281C;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: -0.34px;
+}
+

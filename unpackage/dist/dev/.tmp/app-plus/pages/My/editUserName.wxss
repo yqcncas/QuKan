@@ -1,0 +1,27 @@
+page {
+  background: #f3f3f3;
+}
+.input-name {
+  width: 750rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 100rpx;
+  background: #FFFFFF;
+  margin-top: 30rpx;
+}
+.input-name input {
+  margin-left: 30rpx;
+  width: 660rpx;
+  font-size: 14px;
+  color: #222222;
+}
+.input-name image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 30rpx;
+}
+

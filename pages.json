@@ -1,0 +1,379 @@
+{
+	//easycom
+	"easycom": {
+		"^u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/Start/Start",
+		// 	"style": {
+		// 		// "navigationBarTitleText": "uni-app",
+		// 		"titleNView": "false"
+		// 	}
+		// },
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "titleNView": "false",
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": "white",
+				"app-plus":{
+					"scrollIndicator": "none",
+					"pullToRefresh": {
+						"style": "circle"
+					}
+				},
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/Classify/Classify",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus":{
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/Find/Find",
+			"style": {
+				"navigationStyle":"custom",
+				"navigationBarTextStyle":"white",
+				"app-plus":{
+					"softinputMode":"adjustResize"
+				}
+			}
+		},
+		{
+			"path": "pages/Market/Market",
+			"style": {
+				"navigationBarTitleText": "大市场"
+			}
+		},
+		{
+			"path": "pages/My/My",
+			"style": {
+				"navigationStyle":"custom",
+				"navigationBarTextStyle":"white"
+			}
+		}
+	    ,{
+            "path" : "pages/My/userInfo",
+            "style" : {
+				"navigationBarTitleText":"个人信息"
+			}
+        }
+        ,{
+            "path" : "pages/My/editUserName",
+            "style" : {
+				"navigationBarTitleText":"修改昵称",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[{
+							"type":"none",
+							"text":"完成",
+							"fontSize":"14px",
+							"width":"60px",
+							"color":"#C9281C"
+						}]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/My/myAddress",
+            "style" : {
+				"navigationBarTitleText":"我的地址",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[{
+							"type":"none",
+							"text":"添加地址",
+							"fontSize":"14px",
+							"width":"88px",
+							"color":"#939393"
+						}]
+					}
+				}
+			}
+        },
+		{
+			"path": "pages/Bargaing/Bargaing",
+			"style": {
+				"navigationBarTitleText":"正在砍",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/NewBargin/NewBargin",
+			"style": {
+				"navigationBarTitleText":"最新成交"
+			}
+		},
+		{
+			"path": "pages/ActivityArea/ActivityArea",
+			"style": {
+				"titleNView": "false"
+			}
+		},
+		{
+			"path": "pages/DrawRecord/DrawRecord",
+			"style": {
+				"navigationBarTitleText":"抽奖记录"
+			}
+		},
+		{
+			"path": "pages/Invite/Invite",
+			"style": {
+				"navigationBarTitleText":"邀请好友"
+			}
+		},
+		{
+			"path": "pages/InviteFriends/InviteFriends",
+			"style": {
+				"titleNView": "false"
+			}
+		},
+		{
+			"path": "pages/Lottery/Lottery",
+			"style": {
+				"titleNView": "false"
+			}
+		},
+		{
+			"path": "pages/RandomRedBag/RandomRedBag",
+			"style": {
+				"titleNView": "false",
+				"navigationBarTextStyle": "white",
+				"app-plus":{
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/Search/Search",
+			"style": {
+				"navigationBarTitleText":"搜索"
+			}
+		},
+		{
+			"path": "pages/AffirmOrder/AffirmOrder",
+			"style": {
+				"navigationBarTitleText":"确认订单",
+				"app-plus":{
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/PopularShop/PopularShop",
+			"style": {
+				"titleNView": "false",
+				"navigationBarTextStyle": "white",
+				"app-plus":{
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/OptimizationShop/OptimizationShop",
+			"style": {
+				"navigationBarTitleText":"商品详情",
+				"app-plus":{
+					"scrollIndicator": "none",
+					"titleNView": {
+						"titleText": "",
+						"type":"transparent"
+				
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/QuKan/QuKan",
+			"style": {
+				"app-plus":{
+					"scrollIndicator": "none",
+					"titleNView": {
+						"titleText": "趣砍详情",
+						"type":"transparent"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/Bids/Bids",
+			"style": {
+				"navigationBarTitleText": "出价记录"
+			}
+		},
+		{
+			"path": "pages/Login/Login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"app-plus":{
+					"softinputMode":"adjustPan"
+				}
+			}
+		}
+        
+        ,{
+            "path" : "pages/My/editAddress",
+            "style" : {
+				"navigationBarTitleText":"添加地址"
+			}
+        }
+        ,{
+            "path" : "pages/My/setting",
+            "style" : {
+				"navigationBarTitleText":"设置"
+			}
+        }
+        ,{
+            "path" : "pages/My/problem",
+            "style" : {
+				"navigationBarTitleText":"意见反馈"
+			}
+        }
+        ,{
+            "path" : "pages/My/message",
+            "style" : {
+				"navigationBarTitleText":"消息"
+			}
+        }
+        ,{
+            "path" : "pages/My/commission",
+            "style" : {
+				"navigationStyle":"custom",
+				"navigationBarTextStyle":"white"
+			}
+        }
+        ,{
+            "path" : "pages/cash/cash",
+            "style" : {
+				"navigationBarTitleText":"提现"
+			}
+        }
+        ,{
+            "path" : "pages/My/beanDetail",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+        ,{
+            "path" : "pages/My/integral",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+        ,{
+            "path" : "pages/myOrder/myOrder",
+            "style" : {
+				"navigationBarTitleText":"我的订单"
+			}
+        }
+        ,{
+            "path" : "pages/myOrder/orderDetail",
+            "style" : {
+				"navigationBarTitleText":"订单详情"
+			}
+        }
+        ,{
+            "path" : "pages/myOrder/evaluate",
+            "style" : {
+				"navigationBarTitleText":"评价"
+			}
+        }
+        ,{
+            "path" : "pages/myTeam/myTeam",
+            "style" : {
+				"navigationBarTitleText":"我的团队"
+			}
+        }
+        ,{
+            "path" : "pages/myCollection/myCollection",
+            "style" : {
+				"navigationBarTitleText":"我的收藏"
+			}
+        }
+        ,{
+            "path" : "pages/Punch/Punch",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+
+        ,{
+            "path" : "pages/article/article",
+            "style" : {
+				"navigationBarTitleText":""
+			}
+        }
+        ,{
+            "path" : "pages/My/bindUp",
+            "style" : {
+				"navigationBarTitleText":"绑定上级",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[{
+							"type":"none",
+							"text":"完成",
+							"fontSize":"14px",
+							"width":"60px",
+							"color":"#C9281C"
+						}]
+					}
+				}
+			}
+        },
+		{
+		    "path" : "pages/ShopDetailArt/ShopDeatailArt",
+		    "style" : {
+				"navigationBarTitleText":""
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8",
+		"app-plus":{
+			"bounce":"none"
+		}
+	},
+	"tabBar": {
+	    "borderStyle": "white",
+	    "color": "#222222",
+	    "selectedColor": "#C9281C",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/image/tabbar/home.png",
+	        "selectedIconPath": "static/image/tabbar/home-active.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/Classify/Classify",
+	        "iconPath": "static/image/tabbar/classify.png",
+	        "selectedIconPath": "static/image/tabbar/classify-active.png",
+	        "text": "分类"
+	    }, {
+	        "pagePath": "pages/Find/Find",
+	        "iconPath": "static/image/tabbar/find.png",
+	        "selectedIconPath": "static/image/tabbar/find-active.png",
+	        "text": "充值"
+	    }, {
+	        "pagePath": "pages/Market/Market",
+	        "iconPath": "static/image/tabbar/market.png",
+	        "selectedIconPath": "static/image/tabbar/market-active.png",
+	        "text": "大市场"
+	    }, {
+	        "pagePath": "pages/My/My",
+	        "iconPath": "static/image/tabbar/my.png",
+	        "selectedIconPath": "static/image/tabbar/my-active.png",
+	        "text": "我的"
+	    }]
+	}
+}

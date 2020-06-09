@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "修改昵称",
+  "titleNView": {
+    "buttons": [
+      {
+        "type": "none",
+        "text": "完成",
+        "fontSize": "14px",
+        "width": "60px",
+        "color": "#C9281C"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

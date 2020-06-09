@@ -1,0 +1,2 @@
+setCssToHead(["body { background: #FFFFFF; }\n.",[1],"content { width: ",[0,750],"; padding: ",[0,30]," 0; }\n",],undefined,{path:"./pages/ShopDetailArt/ShopDeatailArt.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/ShopDetailArt/ShopDeatailArt.wxml') } }));

@@ -1,0 +1,414 @@
+page::after {
+  display: none;
+}
+.affirmorder {
+  width: 100%;
+  padding-bottom: 142rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-header {
+  width: 100%;
+  height: 160rpx;
+  margin: 30rpx 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 0 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-header .affirmorder-header-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.affirmorder .affirmorder-header .affirmorder-header-left .affirmorder-header-left-location image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.affirmorder .affirmorder-header .affirmorder-header-left .affirmorder-header-left-info {
+  padding-left: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-header .affirmorder-header-left .affirmorder-header-left-info .affirmorder-header-left-info-top text:nth-child(1) {
+  width: 110rpx;
+  height: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #9B9B9B;
+  letter-spacing: -0.34px;
+}
+.affirmorder .affirmorder-header .affirmorder-header-left .affirmorder-header-left-info .affirmorder-header-left-info-top text:nth-child(2),
+.affirmorder .affirmorder-header .affirmorder-header-left .affirmorder-header-left-info .affirmorder-header-left-info-top text:nth-child(3) {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: -0.34px;
+  padding-left: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-header .affirmorder-header-left .affirmorder-header-left-info .affirmorder-header-left-info-top text:nth-child(3) {
+  padding-left: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-header .affirmorder-header-left .affirmorder-header-left-info .affirmorder-header-left-info-bottom {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.affirmorder .affirmorder-header .affirmorder-header-left .affirmorder-header-left-info .affirmorder-header-left-info-bottom text:nth-child(1) {
+  width: 138rpx;
+  height: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #9B9B9B;
+  letter-spacing: -0.34px;
+}
+.affirmorder .affirmorder-header .affirmorder-header-left .affirmorder-header-left-info .affirmorder-header-left-info-bottom text:nth-child(2) {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: -0.34px;
+  text-align: justify;
+}
+.affirmorder .affirmorder-header .affirmorder-header-right image {
+  width: 16rpx;
+  height: 26rpx;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-item {
+  width: 750rpx;
+  height: 260rpx;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1rpx solid #F3F3F3;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-item .affirmorder-shop-left image {
+  width: 200rpx;
+  height: 200rpx;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-item .affirmorder-shop-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  padding-left: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-item .affirmorder-shop-right .affirmorder-shop-right-top {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #4A4A4A;
+  letter-spacing: -0.34px;
+  font-weight: bold;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-item .affirmorder-shop-right .affirmorder-shop-right-bottom {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #4A4A4A;
+  letter-spacing: -0.34px;
+  padding-top: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  padding: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price .affirmorder-shop-price-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price .affirmorder-shop-price-top .affirmorder-shop-price-top-left {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #9B9B9B;
+  letter-spacing: 0.14px;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price .affirmorder-shop-price-top .affirmorder-shop-price-top-right {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #4A4A4A;
+  letter-spacing: -0.34px;
+  padding-left: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price .affirmorder-shop-price-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price .affirmorder-shop-price-center .affirmorder-shop-price-center-left {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #9B9B9B;
+  letter-spacing: 0.14px;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price .affirmorder-shop-price-center .affirmorder-shop-price-center-right {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #4A4A4A;
+  letter-spacing: -0.34px;
+  padding-left: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price .affirmorder-shop-price-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price .affirmorder-shop-price-bottom .affirmorder-shop-price-bottom-left {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #9B9B9B;
+  letter-spacing: 0.17px;
+}
+.affirmorder .affirmorder-shop .affirmorder-shop-price .affirmorder-shop-price-bottom .affirmorder-shop-price-bottom-right {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #C9281C;
+  letter-spacing: -0.43px;
+  font-weight: bold;
+  padding-left: 28rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-bottom {
+  width: 100%;
+  height: 112rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+.affirmorder .affirmorder-bottom .affirmorder-bottom-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: right;
+  padding-right: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-bottom .affirmorder-bottom-left text:nth-child(1) {
+  font-family: TaipeiSansTCBeta-Regular;
+  font-size: 12px;
+  color: #A2A2A2;
+  letter-spacing: -0.29px;
+  padding-right: 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .affirmorder-bottom .affirmorder-bottom-left text:nth-child(2) {
+  font-family: PingFangSC-Semibold;
+  font-size: 17px;
+  color: #C9281C;
+  letter-spacing: -0.41px;
+  font-weight: bold;
+}
+.affirmorder .affirmorder-bottom .affirmorder-bottom-right {
+  width: 250rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background: #C9281C;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: -0.34px;
+}
+.affirmorder .popupPay-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 60rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .popupPay-header .popupPay-header-left {
+  font-family: PingFangSC-Semibold;
+  font-size: 17px;
+  color: #09023e;
+  letter-spacing: -0.41px;
+  font-weight: bold;
+  margin-right: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .popupPay-header .popupPay-header-right {
+  font-family: PingFangSC-Semibold;
+  font-size: 24px;
+  color: #ff8516;
+  letter-spacing: -0.58px;
+}
+.affirmorder .popupPay-middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 28rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .popupPay-middle .popupPay-middle-left {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: rgba(9, 2, 62, 0.3);
+  letter-spacing: -0.34px;
+}
+.affirmorder .popupPay-middle .popupPay-middle-right {
+  margin-left: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #5468ff;
+  letter-spacing: -0.34px;
+}
+.affirmorder .popupPay-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 60rpx;
+  padding-left: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .popupPay-item .circle {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  border: 1px solid rgba(9, 2, 62, 0.3);
+  position: relative;
+}
+.affirmorder .popupPay-item .circle .n-circle {
+  width: 24rpx;
+  height: 24rpx;
+  border-radius: 50%;
+  background: #5468ff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.affirmorder .popupPay-item image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.affirmorder .popupPay-item .pay-way {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: -0.34px;
+}
+.affirmorder .popupPay-item .pay-way .pay-way-sectext {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: rgba(9, 2, 62, 0.3);
+  letter-spacing: -0.34px;
+}
+.affirmorder .popupPay-button {
+  margin: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 690rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background: #5468ff;
+  border-radius: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: -0.34px;
+}
+

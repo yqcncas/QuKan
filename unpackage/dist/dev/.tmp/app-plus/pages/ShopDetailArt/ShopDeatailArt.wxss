@@ -1,0 +1,8 @@
+page {
+  background: #FFFFFF;
+}
+.content {
+  width: 750rpx;
+  padding: 30rpx 0;
+}
+

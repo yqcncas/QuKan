@@ -1,0 +1,18 @@
+{
+  "navigationBarTitleText": "我的地址",
+  "titleNView": {
+    "buttons": [
+      {
+        "type": "none",
+        "text": "添加地址",
+        "fontSize": "14px",
+        "width": "88px",
+        "color": "#939393"
+      }
+    ]
+  },
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "u-empty": "/uview/components/u-empty/u-empty"
+  }
+}

@@ -1,0 +1,1 @@
+<view><view class="input-name"><input type="text" placeholder="{{placeholder}}" placeholder-class="placeHolderClass" data-event-opts="{{[['input',[['__set_model',['','userName','$event',[]]]]]]}}" value="{{userName}}" bindinput="__e"/><block wx:if="{{userName}}"><image src="../../static/image/ylc/25.png" mode></image></block></view></view>

@@ -1,0 +1,81 @@
+.invite {
+  height: 100%;
+  background-color: #fff;
+}
+.invite .invite-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-family: PingFangSC-Regular;
+  font-size: 17px;
+  color: #000000;
+  padding-top: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.invite .invite-main {
+  width: 506rpx;
+  height: 902rpx;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.invite .invite-main .invite-main-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.invite .invite-main .invite-main-box image {
+  width: 180rpx;
+  height: 180rpx;
+}
+.invite .invite-main .invite-main-box .invite-main-bottom {
+  color: #fdd580;
+  font-size: 12px;
+  margin-top: 10rpx;
+}
+.invite .invite-bottom {
+  width: 750rpx;
+  height: 118rpx;
+  text-align: center;
+  line-height: 118rpx;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFE38D), to(#FFBD3F));
+  background-image: -webkit-linear-gradient(top, #FFE38D 0%, #FFBD3F 100%);
+  background-image: linear-gradient(180deg, #FFE38D 0%, #FFBD3F 100%);
+  -webkit-box-shadow: 0 2px 3px 0 rgba(203, 41, 16, 0.5);
+          box-shadow: 0 2px 3px 0 rgba(203, 41, 16, 0.5);
+  position: fixed;
+  bottom: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #EC5237;
+  letter-spacing: -0.34px;
+}
+

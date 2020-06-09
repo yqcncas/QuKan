@@ -1,0 +1,7 @@
+{
+  "titleNView": "false",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-popup": "/uview/components/u-popup/u-popup"
+  }
+}

@@ -5,6 +5,7 @@
     "type": "transparent"
   },
   "usingComponents": {
-    "jyf-parser": "/components/jyf-parser/jyf-parser"
+    "jyf-parser": "/components/jyf-parser/jyf-parser",
+    "u-number-box": "/uview/components/u-number-box/u-number-box"
   }
 }

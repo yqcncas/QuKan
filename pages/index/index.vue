@@ -202,7 +202,7 @@
 			// this.swiperFlag = false
 			// this.tabInfo = []
 			this.getIndexInfo()
-			if (uni.getStorageSync('token')) {
+			if (uni.getStorageSync('token') && uni.getStorageSync('MyUserId')) {
 				this.getUserInfo()
 			}
 			// 获取剪贴板内容

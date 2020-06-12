@@ -1561,19 +1561,20 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_36)return __WXML_GLOBAL__.ops_cached.$gwx_36
 __WXML_GLOBAL__.ops_cached.$gwx_36=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[2,'!'],[[7],[3,'isLoading']]])
+Z([3,'qukan'])
 Z([3,'qukan-tablist-main'])
 Z([[2,'!='],[[7],[3,'qukanTablistIndex']],[1,2]])
 Z([3,'qukan-tablist-main-list'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[7],[3,'QuKanCommentArr']])
-Z(z[4])
+Z(z[5])
 Z([[2,'=='],[[7],[3,'qukanTablistIndex']],[1,0]])
 Z([[7],[3,'hideComment']])
-Z(z[4])
 Z(z[5])
+Z(z[6])
 Z([[7],[3,'QKHistoryArr']])
-Z(z[4])
+Z(z[5])
 Z([[2,'=='],[[7],[3,'qukanTablistIndex']],[1,1]])
 Z([[2,'=='],[[7],[3,'qukanTablistIndex']],[1,2]])
 Z([3,'__l'])
@@ -1581,6 +1582,15 @@ Z([3,'vue-ref'])
 Z([3,'article'])
 Z([[7],[3,'richText']])
 Z([3,'1017e356-1'])
+Z(z[17])
+Z([3,'__e'])
+Z([3,'number-box'])
+Z([3,'#C9281C'])
+Z([[4],[[5],[[4],[[5],[[5],[1,'^change']],[[4],[[5],[[4],[[5],[1,'valChange']]]]]]]]])
+Z([1,true])
+Z([1,1])
+Z([[7],[3,'value']])
+Z([3,'1017e356-2'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_36);return __WXML_GLOBAL__.ops_cached.$gwx_36
 }
 function gz$gwx_37(){
@@ -2552,51 +2562,56 @@ _(r,cKF)
 if(_oz(z,0,e,s,gg)){cKF.wxVkey=1
 var oLF=_n('view')
 _rz(z,oLF,'class',1,e,s,gg)
-var lMF=_v()
-_(oLF,lMF)
-if(_oz(z,2,e,s,gg)){lMF.wxVkey=1
+var lMF=_n('view')
+_rz(z,lMF,'class',2,e,s,gg)
+var aNF=_v()
+_(lMF,aNF)
+if(_oz(z,3,e,s,gg)){aNF.wxVkey=1
 }
-var aNF=_n('view')
-_rz(z,aNF,'class',3,e,s,gg)
-var ePF=_v()
-_(aNF,ePF)
-var bQF=function(xSF,oRF,oTF,gg){
-var cVF=_v()
-_(oTF,cVF)
-if(_oz(z,8,xSF,oRF,gg)){cVF.wxVkey=1
+var tOF=_n('view')
+_rz(z,tOF,'class',4,e,s,gg)
+var bQF=_v()
+_(tOF,bQF)
+var oRF=function(oTF,xSF,fUF,gg){
 var hWF=_v()
-_(cVF,hWF)
-if(_oz(z,9,xSF,oRF,gg)){hWF.wxVkey=1
+_(fUF,hWF)
+if(_oz(z,9,oTF,xSF,gg)){hWF.wxVkey=1
+var oXF=_v()
+_(hWF,oXF)
+if(_oz(z,10,oTF,xSF,gg)){oXF.wxVkey=1
+}
+oXF.wxXCkey=1
 }
 hWF.wxXCkey=1
+return fUF
 }
-cVF.wxXCkey=1
-return oTF
+bQF.wxXCkey=2
+_2z(z,7,oRF,e,s,gg,bQF,'item','index','index')
+var cYF=_v()
+_(tOF,cYF)
+var oZF=function(a2F,l1F,t3F,gg){
+var b5F=_v()
+_(t3F,b5F)
+if(_oz(z,15,a2F,l1F,gg)){b5F.wxVkey=1
 }
-ePF.wxXCkey=2
-_2z(z,6,bQF,e,s,gg,ePF,'item','index','index')
-var oXF=_v()
-_(aNF,oXF)
-var cYF=function(l1F,oZF,a2F,gg){
-var e4F=_v()
-_(a2F,e4F)
-if(_oz(z,14,l1F,oZF,gg)){e4F.wxVkey=1
+b5F.wxXCkey=1
+return t3F
 }
-e4F.wxXCkey=1
-return a2F
+cYF.wxXCkey=2
+_2z(z,13,oZF,e,s,gg,cYF,'item','index','index')
+var ePF=_v()
+_(tOF,ePF)
+if(_oz(z,16,e,s,gg)){ePF.wxVkey=1
+var o6F=_mz(z,'jyf-parser',['bind:__l',17,'class',1,'data-ref',2,'html',3,'vueId',4],[],e,s,gg)
+_(ePF,o6F)
 }
-oXF.wxXCkey=2
-_2z(z,12,cYF,e,s,gg,oXF,'item','index','index')
-var tOF=_v()
-_(aNF,tOF)
-if(_oz(z,15,e,s,gg)){tOF.wxVkey=1
-var b5F=_mz(z,'jyf-parser',['bind:__l',16,'class',1,'data-ref',2,'html',3,'vueId',4],[],e,s,gg)
-_(tOF,b5F)
-}
-tOF.wxXCkey=1
-tOF.wxXCkey=3
-_(oLF,aNF)
-lMF.wxXCkey=1
+ePF.wxXCkey=1
+ePF.wxXCkey=3
+_(lMF,tOF)
+aNF.wxXCkey=1
+_(oLF,lMF)
+var x7F=_mz(z,'u-number-box',['bind:__l',22,'bind:change',1,'class',2,'color',3,'data-event-opts',4,'disabledInput',5,'min',6,'value',7,'vueId',8],[],e,s,gg)
+_(oLF,x7F)
 _(cKF,oLF)
 }
 cKF.wxXCkey=1
@@ -2607,77 +2622,77 @@ e_[x[35]]={f:m35,j:[],i:[],ti:[],ic:[]}
 d_[x[36]]={}
 var m36=function(e,s,r,gg){
 var z=gz$gwx_37()
-var x7F=_n('view')
-_rz(z,x7F,'class',0,e,s,gg)
-var c0F=_n('view')
-_rz(z,c0F,'class',1,e,s,gg)
+var f9F=_n('view')
+_rz(z,f9F,'class',0,e,s,gg)
+var oBG=_n('view')
+_rz(z,oBG,'class',1,e,s,gg)
+var cCG=_v()
+_(oBG,cCG)
+if(_oz(z,2,e,s,gg)){cCG.wxVkey=1
+}
+else{cCG.wxVkey=2
+var oDG=_mz(z,'u-count-to',['autoplay',3,'bind:__l',1,'class',2,'color',3,'data-ref',4,'decimals',5,'endVal',6,'fontSize',7,'startVal',8,'useEasing',9,'vueId',10],[],e,s,gg)
+_(cCG,oDG)
+}
+cCG.wxXCkey=1
+cCG.wxXCkey=3
+_(f9F,oBG)
+var lEG=_mz(z,'u-popup',['bind:__l',14,'bind:input',1,'borderRadius',2,'class',3,'data-event-opts',4,'maskCloseAble',5,'mode',6,'value',7,'vueId',8,'vueSlots',9],[],e,s,gg)
+_(f9F,lEG)
+var c0F=_v()
+_(f9F,c0F)
+if(_oz(z,24,e,s,gg)){c0F.wxVkey=1
+}
 var hAG=_v()
-_(c0F,hAG)
-if(_oz(z,2,e,s,gg)){hAG.wxVkey=1
+_(f9F,hAG)
+if(_oz(z,25,e,s,gg)){hAG.wxVkey=1
 }
-else{hAG.wxVkey=2
-var oBG=_mz(z,'u-count-to',['autoplay',3,'bind:__l',1,'class',2,'color',3,'data-ref',4,'decimals',5,'endVal',6,'fontSize',7,'startVal',8,'useEasing',9,'vueId',10],[],e,s,gg)
-_(hAG,oBG)
-}
+c0F.wxXCkey=1
 hAG.wxXCkey=1
-hAG.wxXCkey=3
-_(x7F,c0F)
-var cCG=_mz(z,'u-popup',['bind:__l',14,'bind:input',1,'borderRadius',2,'class',3,'data-event-opts',4,'maskCloseAble',5,'mode',6,'value',7,'vueId',8,'vueSlots',9],[],e,s,gg)
-_(x7F,cCG)
-var o8F=_v()
-_(x7F,o8F)
-if(_oz(z,24,e,s,gg)){o8F.wxVkey=1
-}
-var f9F=_v()
-_(x7F,f9F)
-if(_oz(z,25,e,s,gg)){f9F.wxVkey=1
-}
-o8F.wxXCkey=1
-f9F.wxXCkey=1
-_(r,x7F)
+_(r,f9F)
 return r
 }
 e_[x[36]]={f:m36,j:[],i:[],ti:[],ic:[]}
 d_[x[37]]={}
 var m37=function(e,s,r,gg){
 var z=gz$gwx_38()
-var lEG=_n('view')
-_rz(z,lEG,'class',0,e,s,gg)
-var aFG=_v()
-_(lEG,aFG)
-if(_oz(z,1,e,s,gg)){aFG.wxVkey=1
-}
-var tGG=_v()
-_(lEG,tGG)
-if(_oz(z,2,e,s,gg)){tGG.wxVkey=1
-}
+var tGG=_n('view')
+_rz(z,tGG,'class',0,e,s,gg)
 var eHG=_v()
-_(lEG,eHG)
-if(_oz(z,3,e,s,gg)){eHG.wxVkey=1
-var bIG=_mz(z,'u-empty',['bind:__l',4,'mode',1,'vueId',2],[],e,s,gg)
-_(eHG,bIG)
+_(tGG,eHG)
+if(_oz(z,1,e,s,gg)){eHG.wxVkey=1
 }
-aFG.wxXCkey=1
-tGG.wxXCkey=1
+var bIG=_v()
+_(tGG,bIG)
+if(_oz(z,2,e,s,gg)){bIG.wxVkey=1
+}
+var oJG=_v()
+_(tGG,oJG)
+if(_oz(z,3,e,s,gg)){oJG.wxVkey=1
+var xKG=_mz(z,'u-empty',['bind:__l',4,'mode',1,'vueId',2],[],e,s,gg)
+_(oJG,xKG)
+}
 eHG.wxXCkey=1
-eHG.wxXCkey=3
-_(r,lEG)
+bIG.wxXCkey=1
+oJG.wxXCkey=1
+oJG.wxXCkey=3
+_(r,tGG)
 return r
 }
 e_[x[37]]={f:m37,j:[],i:[],ti:[],ic:[]}
 d_[x[38]]={}
 var m38=function(e,s,r,gg){
 var z=gz$gwx_39()
-var xKG=_mz(z,'jyf-parser',['bind:__l',0,'class',1,'data-ref',1,'html',2,'vueId',3],[],e,s,gg)
-_(r,xKG)
+var fMG=_mz(z,'jyf-parser',['bind:__l',0,'class',1,'data-ref',1,'html',2,'vueId',3],[],e,s,gg)
+_(r,fMG)
 return r
 }
 e_[x[38]]={f:m38,j:[],i:[],ti:[],ic:[]}
 d_[x[39]]={}
 var m39=function(e,s,r,gg){
 var z=gz$gwx_40()
-var fMG=_mz(z,'jyf-parser',['bind:__l',0,'class',1,'data-ref',1,'html',2,'vueId',3],[],e,s,gg)
-_(r,fMG)
+var hOG=_mz(z,'jyf-parser',['bind:__l',0,'class',1,'data-ref',1,'html',2,'vueId',3],[],e,s,gg)
+_(r,hOG)
 return r
 }
 e_[x[39]]={f:m39,j:[],i:[],ti:[],ic:[]}
@@ -2690,149 +2705,147 @@ e_[x[40]]={f:m40,j:[],i:[],ti:[],ic:[]}
 d_[x[41]]={}
 var m41=function(e,s,r,gg){
 var z=gz$gwx_42()
-var oPG=_n('view')
-_rz(z,oPG,'class',0,e,s,gg)
-var oRG=_mz(z,'status',['bgc',1,'bind:__l',1,'class',2,'vueId',3],[],e,s,gg)
-_(oPG,oRG)
-var lSG=_mz(z,'swiper',['bindchange',5,'class',1,'current',2,'data-event-opts',3,'style',4],[],e,s,gg)
-var aTG=_v()
-_(lSG,aTG)
-var tUG=function(bWG,eVG,oXG,gg){
-var oZG=_mz(z,'uni-load-more',['bgColor',14,'bind:__l',1,'class',2,'status',3,'vueId',4],[],bWG,eVG,gg)
-_(oXG,oZG)
-return oXG
+var oRG=_n('view')
+_rz(z,oRG,'class',0,e,s,gg)
+var aTG=_mz(z,'status',['bgc',1,'bind:__l',1,'class',2,'vueId',3],[],e,s,gg)
+_(oRG,aTG)
+var tUG=_mz(z,'swiper',['bindchange',5,'class',1,'current',2,'data-event-opts',3,'style',4],[],e,s,gg)
+var eVG=_v()
+_(tUG,eVG)
+var bWG=function(xYG,oXG,oZG,gg){
+var c2G=_mz(z,'uni-load-more',['bgColor',14,'bind:__l',1,'class',2,'status',3,'vueId',4],[],xYG,oXG,gg)
+_(oZG,c2G)
+return oZG
 }
-aTG.wxXCkey=4
-_2z(z,12,tUG,e,s,gg,aTG,'item','index','index')
-_(oPG,lSG)
-var cQG=_v()
-_(oPG,cQG)
-if(_oz(z,19,e,s,gg)){cQG.wxVkey=1
+eVG.wxXCkey=4
+_2z(z,12,bWG,e,s,gg,eVG,'item','index','index')
+_(oRG,tUG)
+var lSG=_v()
+_(oRG,lSG)
+if(_oz(z,19,e,s,gg)){lSG.wxVkey=1
 }
-cQG.wxXCkey=1
-_(r,oPG)
+lSG.wxXCkey=1
+_(r,oRG)
 return r
 }
 e_[x[41]]={f:m41,j:[],i:[],ti:[],ic:[]}
 d_[x[42]]={}
 var m42=function(e,s,r,gg){
 var z=gz$gwx_43()
-var c2G=_n('view')
-var o4G=_v()
-_(c2G,o4G)
-var c5G=function(l7G,o6G,a8G,gg){
-var e0G=_v()
-_(a8G,e0G)
-if(_oz(z,4,l7G,o6G,gg)){e0G.wxVkey=1
+var o4G=_n('view')
+var o6G=_v()
+_(o4G,o6G)
+var l7G=function(t9G,a8G,e0G,gg){
+var oBH=_v()
+_(e0G,oBH)
+if(_oz(z,4,t9G,a8G,gg)){oBH.wxVkey=1
 }
-e0G.wxXCkey=1
-return a8G
+oBH.wxXCkey=1
+return e0G
 }
-o4G.wxXCkey=2
-_2z(z,2,c5G,e,s,gg,o4G,'item','index','id')
-var h3G=_v()
-_(c2G,h3G)
-if(_oz(z,5,e,s,gg)){h3G.wxVkey=1
-var bAH=_mz(z,'uni-load-more',['bgColor',6,'bind:__l',1,'status',2,'vueId',3],[],e,s,gg)
-_(h3G,bAH)
+o6G.wxXCkey=2
+_2z(z,2,l7G,e,s,gg,o6G,'item','index','id')
+var c5G=_v()
+_(o4G,c5G)
+if(_oz(z,5,e,s,gg)){c5G.wxVkey=1
+var xCH=_mz(z,'uni-load-more',['bgColor',6,'bind:__l',1,'status',2,'vueId',3],[],e,s,gg)
+_(c5G,xCH)
 }
-var oBH=_mz(z,'u-empty',['bind:__l',10,'mode',1,'show',2,'vueId',3],[],e,s,gg)
-_(c2G,oBH)
-h3G.wxXCkey=1
-h3G.wxXCkey=3
-_(r,c2G)
+var oDH=_mz(z,'u-empty',['bind:__l',10,'mode',1,'show',2,'vueId',3],[],e,s,gg)
+_(o4G,oDH)
+c5G.wxXCkey=1
+c5G.wxXCkey=3
+_(r,o4G)
 return r
 }
 e_[x[42]]={f:m42,j:[],i:[],ti:[],ic:[]}
 d_[x[43]]={}
 var m43=function(e,s,r,gg){
 var z=gz$gwx_44()
-var oDH=_v()
-_(r,oDH)
-if(_oz(z,0,e,s,gg)){oDH.wxVkey=1
+var cFH=_v()
+_(r,cFH)
+if(_oz(z,0,e,s,gg)){cFH.wxVkey=1
 }
-oDH.wxXCkey=1
+cFH.wxXCkey=1
 return r
 }
 e_[x[43]]={f:m43,j:[],i:[],ti:[],ic:[]}
 d_[x[44]]={}
 var m44=function(e,s,r,gg){
 var z=gz$gwx_45()
-var cFH=_n('view')
-var hGH=_mz(z,'swiper',['bindchange',0,'current',1,'data-event-opts',1,'duration',2,'style',3],[],e,s,gg)
-var oHH=_v()
-_(hGH,oHH)
-var cIH=function(lKH,oJH,aLH,gg){
-var eNH=_n('swiper-item')
-_rz(z,eNH,'class',9,lKH,oJH,gg)
-var bOH=_v()
-_(eNH,bOH)
-if(_oz(z,10,lKH,oJH,gg)){bOH.wxVkey=1
-var oPH=_mz(z,'scroll-view',['scrollY',-1,'bindscrolltolower',11,'class',1,'data-event-opts',2,'style',3],[],lKH,oJH,gg)
+var oHH=_n('view')
+var cIH=_mz(z,'swiper',['bindchange',0,'current',1,'data-event-opts',1,'duration',2,'style',3],[],e,s,gg)
+var oJH=_v()
+_(cIH,oJH)
+var lKH=function(tMH,aLH,eNH,gg){
+var oPH=_n('swiper-item')
+_rz(z,oPH,'class',9,tMH,aLH,gg)
 var xQH=_v()
 _(oPH,xQH)
-var oRH=function(cTH,fSH,hUH,gg){
-var cWH=_mz(z,'view',['bindtap',19,'class',1,'data-event-opts',2],[],cTH,fSH,gg)
-var oXH=_n('view')
-_rz(z,oXH,'class',22,cTH,fSH,gg)
-var lYH=_v()
-_(oXH,lYH)
-if(_oz(z,23,cTH,fSH,gg)){lYH.wxVkey=1
-}
-var aZH=_v()
-_(oXH,aZH)
-if(_oz(z,24,cTH,fSH,gg)){aZH.wxVkey=1
-}
+if(_oz(z,10,tMH,aLH,gg)){xQH.wxVkey=1
+var oRH=_mz(z,'scroll-view',['scrollY',-1,'bindscrolltolower',11,'class',1,'data-event-opts',2,'style',3],[],tMH,aLH,gg)
+var fSH=_v()
+_(oRH,fSH)
+var cTH=function(oVH,hUH,cWH,gg){
+var lYH=_mz(z,'view',['bindtap',19,'class',1,'data-event-opts',2],[],oVH,hUH,gg)
+var aZH=_n('view')
+_rz(z,aZH,'class',22,oVH,hUH,gg)
 var t1H=_v()
-_(oXH,t1H)
-if(_oz(z,25,cTH,fSH,gg)){t1H.wxVkey=1
+_(aZH,t1H)
+if(_oz(z,23,oVH,hUH,gg)){t1H.wxVkey=1
 }
 var e2H=_v()
-_(oXH,e2H)
-if(_oz(z,26,cTH,fSH,gg)){e2H.wxVkey=1
+_(aZH,e2H)
+if(_oz(z,24,oVH,hUH,gg)){e2H.wxVkey=1
 }
 var b3H=_v()
-_(oXH,b3H)
-if(_oz(z,27,cTH,fSH,gg)){b3H.wxVkey=1
+_(aZH,b3H)
+if(_oz(z,25,oVH,hUH,gg)){b3H.wxVkey=1
 }
 var o4H=_v()
-_(oXH,o4H)
-if(_oz(z,28,cTH,fSH,gg)){o4H.wxVkey=1
+_(aZH,o4H)
+if(_oz(z,26,oVH,hUH,gg)){o4H.wxVkey=1
 }
 var x5H=_v()
-_(oXH,x5H)
-if(_oz(z,29,cTH,fSH,gg)){x5H.wxVkey=1
+_(aZH,x5H)
+if(_oz(z,27,oVH,hUH,gg)){x5H.wxVkey=1
 }
 var o6H=_v()
-_(oXH,o6H)
-if(_oz(z,30,cTH,fSH,gg)){o6H.wxVkey=1
+_(aZH,o6H)
+if(_oz(z,28,oVH,hUH,gg)){o6H.wxVkey=1
 }
 var f7H=_v()
-_(oXH,f7H)
-if(_oz(z,31,cTH,fSH,gg)){f7H.wxVkey=1
+_(aZH,f7H)
+if(_oz(z,29,oVH,hUH,gg)){f7H.wxVkey=1
 }
 var c8H=_v()
-_(oXH,c8H)
-if(_oz(z,32,cTH,fSH,gg)){c8H.wxVkey=1
+_(aZH,c8H)
+if(_oz(z,30,oVH,hUH,gg)){c8H.wxVkey=1
 }
 var h9H=_v()
-_(oXH,h9H)
-if(_oz(z,33,cTH,fSH,gg)){h9H.wxVkey=1
+_(aZH,h9H)
+if(_oz(z,31,oVH,hUH,gg)){h9H.wxVkey=1
 }
 var o0H=_v()
-_(oXH,o0H)
-if(_oz(z,34,cTH,fSH,gg)){o0H.wxVkey=1
+_(aZH,o0H)
+if(_oz(z,32,oVH,hUH,gg)){o0H.wxVkey=1
 }
 var cAI=_v()
-_(oXH,cAI)
-if(_oz(z,35,cTH,fSH,gg)){cAI.wxVkey=1
+_(aZH,cAI)
+if(_oz(z,33,oVH,hUH,gg)){cAI.wxVkey=1
 }
 var oBI=_v()
-_(oXH,oBI)
-if(_oz(z,36,cTH,fSH,gg)){oBI.wxVkey=1
+_(aZH,oBI)
+if(_oz(z,34,oVH,hUH,gg)){oBI.wxVkey=1
 }
-lYH.wxXCkey=1
-aZH.wxXCkey=1
+var lCI=_v()
+_(aZH,lCI)
+if(_oz(z,35,oVH,hUH,gg)){lCI.wxVkey=1
+}
+var aDI=_v()
+_(aZH,aDI)
+if(_oz(z,36,oVH,hUH,gg)){aDI.wxVkey=1
+}
 t1H.wxXCkey=1
 e2H.wxXCkey=1
 b3H.wxXCkey=1
@@ -2845,165 +2858,167 @@ h9H.wxXCkey=1
 o0H.wxXCkey=1
 cAI.wxXCkey=1
 oBI.wxXCkey=1
-_(cWH,oXH)
-var lCI=_n('view')
-_rz(z,lCI,'class',37,cTH,fSH,gg)
-var aDI=_v()
-_(lCI,aDI)
-if(_oz(z,38,cTH,fSH,gg)){aDI.wxVkey=1
+lCI.wxXCkey=1
+aDI.wxXCkey=1
+_(lYH,aZH)
 var tEI=_n('view')
+_rz(z,tEI,'class',37,oVH,hUH,gg)
 var eFI=_v()
 _(tEI,eFI)
-if(_oz(z,39,cTH,fSH,gg)){eFI.wxVkey=1
+if(_oz(z,38,oVH,hUH,gg)){eFI.wxVkey=1
+var bGI=_n('view')
+var oHI=_v()
+_(bGI,oHI)
+if(_oz(z,39,oVH,hUH,gg)){oHI.wxVkey=1
 }
-var bGI=_v()
-_(tEI,bGI)
-if(_oz(z,40,cTH,fSH,gg)){bGI.wxVkey=1
+var xII=_v()
+_(bGI,xII)
+if(_oz(z,40,oVH,hUH,gg)){xII.wxVkey=1
+}
+oHI.wxXCkey=1
+xII.wxXCkey=1
+_(eFI,bGI)
+}
+else{eFI.wxVkey=2
 }
 eFI.wxXCkey=1
-bGI.wxXCkey=1
-_(aDI,tEI)
-}
-else{aDI.wxVkey=2
-}
-aDI.wxXCkey=1
-_(cWH,lCI)
-var oHI=_n('view')
-_rz(z,oHI,'class',41,cTH,fSH,gg)
-var xII=_v()
-_(oHI,xII)
-if(_oz(z,42,cTH,fSH,gg)){xII.wxVkey=1
-}
-var oJI=_v()
-_(oHI,oJI)
-if(_oz(z,43,cTH,fSH,gg)){oJI.wxVkey=1
-}
+_(lYH,tEI)
+var oJI=_n('view')
+_rz(z,oJI,'class',41,oVH,hUH,gg)
 var fKI=_v()
-_(oHI,fKI)
-if(_oz(z,44,cTH,fSH,gg)){fKI.wxVkey=1
+_(oJI,fKI)
+if(_oz(z,42,oVH,hUH,gg)){fKI.wxVkey=1
 }
 var cLI=_v()
-_(oHI,cLI)
-if(_oz(z,45,cTH,fSH,gg)){cLI.wxVkey=1
+_(oJI,cLI)
+if(_oz(z,43,oVH,hUH,gg)){cLI.wxVkey=1
 }
 var hMI=_v()
-_(oHI,hMI)
-if(_oz(z,46,cTH,fSH,gg)){hMI.wxVkey=1
+_(oJI,hMI)
+if(_oz(z,44,oVH,hUH,gg)){hMI.wxVkey=1
 }
 var oNI=_v()
-_(oHI,oNI)
-if(_oz(z,47,cTH,fSH,gg)){oNI.wxVkey=1
+_(oJI,oNI)
+if(_oz(z,45,oVH,hUH,gg)){oNI.wxVkey=1
 }
 var cOI=_v()
-_(oHI,cOI)
-if(_oz(z,48,cTH,fSH,gg)){cOI.wxVkey=1
+_(oJI,cOI)
+if(_oz(z,46,oVH,hUH,gg)){cOI.wxVkey=1
 }
-xII.wxXCkey=1
-oJI.wxXCkey=1
+var oPI=_v()
+_(oJI,oPI)
+if(_oz(z,47,oVH,hUH,gg)){oPI.wxVkey=1
+}
+var lQI=_v()
+_(oJI,lQI)
+if(_oz(z,48,oVH,hUH,gg)){lQI.wxVkey=1
+}
 fKI.wxXCkey=1
 cLI.wxXCkey=1
 hMI.wxXCkey=1
 oNI.wxXCkey=1
 cOI.wxXCkey=1
-_(cWH,oHI)
-_(hUH,cWH)
-return hUH
+oPI.wxXCkey=1
+lQI.wxXCkey=1
+_(lYH,oJI)
+_(cWH,lYH)
+return cWH
 }
-xQH.wxXCkey=2
-_2z(z,17,oRH,lKH,oJH,gg,xQH,'item','index','id')
-var oPI=_mz(z,'uni-load-more',['bgColor',49,'bind:__l',1,'status',2,'vueId',3],[],lKH,oJH,gg)
-_(oPH,oPI)
-_(bOH,oPH)
+fSH.wxXCkey=2
+_2z(z,17,cTH,tMH,aLH,gg,fSH,'item','index','id')
+var aRI=_mz(z,'uni-load-more',['bgColor',49,'bind:__l',1,'status',2,'vueId',3],[],tMH,aLH,gg)
+_(oRH,aRI)
+_(xQH,oRH)
 }
-var lQI=_mz(z,'u-empty',['bind:__l',53,'mode',1,'show',2,'vueId',3],[],lKH,oJH,gg)
-_(eNH,lQI)
-bOH.wxXCkey=1
-bOH.wxXCkey=3
-_(aLH,eNH)
-return aLH
+var tSI=_mz(z,'u-empty',['bind:__l',53,'mode',1,'show',2,'vueId',3],[],tMH,aLH,gg)
+_(oPH,tSI)
+xQH.wxXCkey=1
+xQH.wxXCkey=3
+_(eNH,oPH)
+return eNH
 }
-oHH.wxXCkey=4
-_2z(z,7,cIH,e,s,gg,oHH,'it','index','index')
-_(cFH,hGH)
-var aRI=_mz(z,'u-popup',['bind:__l',57,'bind:input',1,'borderRadius',2,'data-event-opts',3,'mode',4,'value',5,'vueId',6,'vueSlots',7],[],e,s,gg)
-_(cFH,aRI)
-_(r,cFH)
+oJH.wxXCkey=4
+_2z(z,7,lKH,e,s,gg,oJH,'it','index','index')
+_(oHH,cIH)
+var eTI=_mz(z,'u-popup',['bind:__l',57,'bind:input',1,'borderRadius',2,'data-event-opts',3,'mode',4,'value',5,'vueId',6,'vueSlots',7],[],e,s,gg)
+_(oHH,eTI)
+_(r,oHH)
 return r
 }
 e_[x[44]]={f:m44,j:[],i:[],ti:[],ic:[]}
 d_[x[45]]={}
 var m45=function(e,s,r,gg){
 var z=gz$gwx_46()
-var eTI=_n('view')
-var bUI=_v()
-_(eTI,bUI)
-if(_oz(z,0,e,s,gg)){bUI.wxVkey=1
-}
-var oVI=_v()
-_(eTI,oVI)
-if(_oz(z,1,e,s,gg)){oVI.wxVkey=1
-}
+var oVI=_n('view')
 var xWI=_v()
-_(eTI,xWI)
-if(_oz(z,2,e,s,gg)){xWI.wxVkey=1
+_(oVI,xWI)
+if(_oz(z,0,e,s,gg)){xWI.wxVkey=1
 }
 var oXI=_v()
-_(eTI,oXI)
-if(_oz(z,3,e,s,gg)){oXI.wxVkey=1
-var c3I=_n('view')
-_rz(z,c3I,'class',4,e,s,gg)
-var o4I=_v()
-_(c3I,o4I)
-if(_oz(z,5,e,s,gg)){o4I.wxVkey=1
-}
-var l5I=_v()
-_(c3I,l5I)
-if(_oz(z,6,e,s,gg)){l5I.wxVkey=1
-}
-o4I.wxXCkey=1
-l5I.wxXCkey=1
-_(oXI,c3I)
+_(oVI,oXI)
+if(_oz(z,1,e,s,gg)){oXI.wxVkey=1
 }
 var fYI=_v()
-_(eTI,fYI)
-if(_oz(z,7,e,s,gg)){fYI.wxVkey=1
+_(oVI,fYI)
+if(_oz(z,2,e,s,gg)){fYI.wxVkey=1
 }
 var cZI=_v()
-_(eTI,cZI)
-if(_oz(z,8,e,s,gg)){cZI.wxVkey=1
+_(oVI,cZI)
+if(_oz(z,3,e,s,gg)){cZI.wxVkey=1
+var l5I=_n('view')
+_rz(z,l5I,'class',4,e,s,gg)
 var a6I=_v()
-_(cZI,a6I)
-if(_oz(z,9,e,s,gg)){a6I.wxVkey=1
+_(l5I,a6I)
+if(_oz(z,5,e,s,gg)){a6I.wxVkey=1
+}
+var t7I=_v()
+_(l5I,t7I)
+if(_oz(z,6,e,s,gg)){t7I.wxVkey=1
 }
 a6I.wxXCkey=1
+t7I.wxXCkey=1
+_(cZI,l5I)
 }
 var h1I=_v()
-_(eTI,h1I)
-if(_oz(z,10,e,s,gg)){h1I.wxVkey=1
+_(oVI,h1I)
+if(_oz(z,7,e,s,gg)){h1I.wxVkey=1
 }
 var o2I=_v()
-_(eTI,o2I)
-if(_oz(z,11,e,s,gg)){o2I.wxVkey=1
+_(oVI,o2I)
+if(_oz(z,8,e,s,gg)){o2I.wxVkey=1
+var e8I=_v()
+_(o2I,e8I)
+if(_oz(z,9,e,s,gg)){e8I.wxVkey=1
 }
-var t7I=_mz(z,'u-popup',['bind:__l',12,'bind:input',1,'borderRadius',2,'data-event-opts',3,'mode',4,'value',5,'vueId',6,'vueSlots',7],[],e,s,gg)
-_(eTI,t7I)
-bUI.wxXCkey=1
-oVI.wxXCkey=1
+e8I.wxXCkey=1
+}
+var c3I=_v()
+_(oVI,c3I)
+if(_oz(z,10,e,s,gg)){c3I.wxVkey=1
+}
+var o4I=_v()
+_(oVI,o4I)
+if(_oz(z,11,e,s,gg)){o4I.wxVkey=1
+}
+var b9I=_mz(z,'u-popup',['bind:__l',12,'bind:input',1,'borderRadius',2,'data-event-opts',3,'mode',4,'value',5,'vueId',6,'vueSlots',7],[],e,s,gg)
+_(oVI,b9I)
 xWI.wxXCkey=1
 oXI.wxXCkey=1
 fYI.wxXCkey=1
 cZI.wxXCkey=1
 h1I.wxXCkey=1
 o2I.wxXCkey=1
-_(r,eTI)
+c3I.wxXCkey=1
+o4I.wxXCkey=1
+_(r,oVI)
 return r
 }
 e_[x[45]]={f:m45,j:[],i:[],ti:[],ic:[]}
 d_[x[46]]={}
 var m46=function(e,s,r,gg){
 var z=gz$gwx_47()
-var b9I=_mz(z,'uni-load-more',['bgColor',0,'bind:__l',1,'status',1,'vueId',2],[],e,s,gg)
-_(r,b9I)
+var xAJ=_mz(z,'uni-load-more',['bgColor',0,'bind:__l',1,'status',1,'vueId',2],[],e,s,gg)
+_(r,xAJ)
 return r
 }
 e_[x[46]]={f:m46,j:[],i:[],ti:[],ic:[]}
@@ -3016,14 +3031,14 @@ e_[x[47]]={f:m47,j:[],i:[],ti:[],ic:[]}
 d_[x[48]]={}
 var m48=function(e,s,r,gg){
 var z=gz$gwx_49()
-var oBJ=_v()
-_(r,oBJ)
-if(_oz(z,0,e,s,gg)){oBJ.wxVkey=1
-var fCJ=_n('slot')
-_rz(z,fCJ,'name',1,e,s,gg)
-_(oBJ,fCJ)
+var cDJ=_v()
+_(r,cDJ)
+if(_oz(z,0,e,s,gg)){cDJ.wxVkey=1
+var hEJ=_n('slot')
+_rz(z,hEJ,'name',1,e,s,gg)
+_(cDJ,hEJ)
 }
-oBJ.wxXCkey=1
+cDJ.wxXCkey=1
 return r
 }
 e_[x[48]]={f:m48,j:[],i:[],ti:[],ic:[]}
@@ -3036,97 +3051,97 @@ e_[x[49]]={f:m49,j:[],i:[],ti:[],ic:[]}
 d_[x[50]]={}
 var m50=function(e,s,r,gg){
 var z=gz$gwx_51()
-var oFJ=_mz(z,'view',['bindtap',0,'catchtouchmove',1,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
-var cGJ=_n('slot')
-_(oFJ,cGJ)
-_(r,oFJ)
+var oHJ=_mz(z,'view',['bindtap',0,'catchtouchmove',1,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
+var lIJ=_n('slot')
+_(oHJ,lIJ)
+_(r,oHJ)
 return r
 }
 e_[x[50]]={f:m50,j:[],i:[],ti:[],ic:[]}
 d_[x[51]]={}
 var m51=function(e,s,r,gg){
 var z=gz$gwx_52()
-var lIJ=_n('view')
-_rz(z,lIJ,'class',0,e,s,gg)
-var aJJ=_mz(z,'view',['bindtap',1,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
-var tKJ=_mz(z,'u-icon',['bind:__l',5,'class',1,'name',2,'size',3,'vueId',4],[],e,s,gg)
-_(aJJ,tKJ)
-_(lIJ,aJJ)
-var eLJ=_mz(z,'view',['bindtap',10,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
-var bMJ=_mz(z,'u-icon',['bind:__l',14,'class',1,'name',2,'size',3,'vueId',4],[],e,s,gg)
+var tKJ=_n('view')
+_rz(z,tKJ,'class',0,e,s,gg)
+var eLJ=_mz(z,'view',['bindtap',1,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
+var bMJ=_mz(z,'u-icon',['bind:__l',5,'class',1,'name',2,'size',3,'vueId',4],[],e,s,gg)
 _(eLJ,bMJ)
-_(lIJ,eLJ)
-_(r,lIJ)
+_(tKJ,eLJ)
+var oNJ=_mz(z,'view',['bindtap',10,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
+var xOJ=_mz(z,'u-icon',['bind:__l',14,'class',1,'name',2,'size',3,'vueId',4],[],e,s,gg)
+_(oNJ,xOJ)
+_(tKJ,oNJ)
+_(r,tKJ)
 return r
 }
 e_[x[51]]={f:m51,j:[],i:[],ti:[],ic:[]}
 d_[x[52]]={}
 var m52=function(e,s,r,gg){
 var z=gz$gwx_53()
-var xOJ=_v()
-_(r,xOJ)
-if(_oz(z,0,e,s,gg)){xOJ.wxVkey=1
-var oPJ=_mz(z,'view',['class',1,'style',1],[],e,s,gg)
-var fQJ=_mz(z,'u-mask',['bind:__l',3,'bind:click',1,'class',2,'data-event-opts',3,'maskClickAble',4,'show',5,'vueId',6],[],e,s,gg)
-_(oPJ,fQJ)
-var cRJ=_mz(z,'view',['bindtap',10,'catchtouchmove',1,'class',2,'data-event-opts',3,'style',4],[],e,s,gg)
-var hSJ=_v()
+var fQJ=_v()
+_(r,fQJ)
+if(_oz(z,0,e,s,gg)){fQJ.wxVkey=1
+var cRJ=_mz(z,'view',['class',1,'style',1],[],e,s,gg)
+var hSJ=_mz(z,'u-mask',['bind:__l',3,'bind:click',1,'class',2,'data-event-opts',3,'maskClickAble',4,'show',5,'vueId',6],[],e,s,gg)
 _(cRJ,hSJ)
-if(_oz(z,15,e,s,gg)){hSJ.wxVkey=1
-var oTJ=_mz(z,'view',['catchtouchmove',16,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
-var cUJ=_n('slot')
+var oTJ=_mz(z,'view',['bindtap',10,'catchtouchmove',1,'class',2,'data-event-opts',3,'style',4],[],e,s,gg)
+var cUJ=_v()
 _(oTJ,cUJ)
-_(hSJ,oTJ)
+if(_oz(z,15,e,s,gg)){cUJ.wxVkey=1
+var oVJ=_mz(z,'view',['catchtouchmove',16,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
+var lWJ=_n('slot')
+_(oVJ,lWJ)
+_(cUJ,oVJ)
 }
-else{hSJ.wxVkey=2
-var oVJ=_n('slot')
-_(hSJ,oVJ)
+else{cUJ.wxVkey=2
+var aXJ=_n('slot')
+_(cUJ,aXJ)
 }
-hSJ.wxXCkey=1
-_(oPJ,cRJ)
-_(xOJ,oPJ)
+cUJ.wxXCkey=1
+_(cRJ,oTJ)
+_(fQJ,cRJ)
 }
-xOJ.wxXCkey=1
-xOJ.wxXCkey=3
+fQJ.wxXCkey=1
+fQJ.wxXCkey=3
 return r
 }
 e_[x[52]]={f:m52,j:[],i:[],ti:[],ic:[]}
 d_[x[53]]={}
 var m53=function(e,s,r,gg){
 var z=gz$gwx_54()
-var aXJ=_v()
-_(r,aXJ)
-var tYJ=function(b1J,eZJ,o2J,gg){
-var o4J=_n('view')
-_rz(z,o4J,'class',4,b1J,eZJ,gg)
-var f5J=_v()
-_(o4J,f5J)
-if(_oz(z,5,b1J,eZJ,gg)){f5J.wxVkey=1
-}
-var c6J=_v()
-_(o4J,c6J)
-if(_oz(z,6,b1J,eZJ,gg)){c6J.wxVkey=1
-}
+var eZJ=_v()
+_(r,eZJ)
+var b1J=function(x3J,o2J,o4J,gg){
+var c6J=_n('view')
+_rz(z,c6J,'class',4,x3J,o2J,gg)
 var h7J=_v()
-_(o4J,h7J)
-if(_oz(z,7,b1J,eZJ,gg)){h7J.wxVkey=1
+_(c6J,h7J)
+if(_oz(z,5,x3J,o2J,gg)){h7J.wxVkey=1
 }
 var o8J=_v()
-_(o4J,o8J)
-if(_oz(z,8,b1J,eZJ,gg)){o8J.wxVkey=1
-var c9J=_mz(z,'u-icon',['bind:__l',9,'class',1,'name',2,'size',3,'style',4,'vueId',5],[],b1J,eZJ,gg)
-_(o8J,c9J)
+_(c6J,o8J)
+if(_oz(z,6,x3J,o2J,gg)){o8J.wxVkey=1
 }
-f5J.wxXCkey=1
-c6J.wxXCkey=1
+var c9J=_v()
+_(c6J,c9J)
+if(_oz(z,7,x3J,o2J,gg)){c9J.wxVkey=1
+}
+var o0J=_v()
+_(c6J,o0J)
+if(_oz(z,8,x3J,o2J,gg)){o0J.wxVkey=1
+var lAK=_mz(z,'u-icon',['bind:__l',9,'class',1,'name',2,'size',3,'style',4,'vueId',5],[],x3J,o2J,gg)
+_(o0J,lAK)
+}
 h7J.wxXCkey=1
 o8J.wxXCkey=1
-o8J.wxXCkey=3
-_(o2J,o4J)
-return o2J
+c9J.wxXCkey=1
+o0J.wxXCkey=1
+o0J.wxXCkey=3
+_(o4J,c6J)
+return o4J
 }
-aXJ.wxXCkey=4
-_2z(z,2,tYJ,e,s,gg,aXJ,'item','index','index')
+eZJ.wxXCkey=4
+_2z(z,2,b1J,e,s,gg,eZJ,'item','index','index')
 return r
 }
 e_[x[53]]={f:m53,j:[],i:[],ti:[],ic:[]}
@@ -3279,7 +3294,7 @@ __wxAppCode__['pages/PopularShop/PopularShop.wxml']=$gwx('./pages/PopularShop/Po
 __wxAppCode__['pages/Punch/Punch.json']={"navigationStyle":"custom","usingComponents":{"u-steps":"/uview/components/u-steps/u-steps","u-popup":"/uview/components/u-popup/u-popup"}};
 __wxAppCode__['pages/Punch/Punch.wxml']=$gwx('./pages/Punch/Punch.wxml');
 
-__wxAppCode__['pages/QuKan/QuKan.json']={"scrollIndicator":"none","titleNView":{"titleText":"趣砍详情","type":"transparent"},"usingComponents":{"jyf-parser":"/components/jyf-parser/jyf-parser"}};
+__wxAppCode__['pages/QuKan/QuKan.json']={"scrollIndicator":"none","titleNView":{"titleText":"趣砍详情","type":"transparent"},"usingComponents":{"jyf-parser":"/components/jyf-parser/jyf-parser","u-number-box":"/uview/components/u-number-box/u-number-box"}};
 __wxAppCode__['pages/QuKan/QuKan.wxml']=$gwx('./pages/QuKan/QuKan.wxml');
 
 __wxAppCode__['pages/RandomRedBag/RandomRedBag.json']={"titleNView":"false","navigationBarTextStyle":"white","scrollIndicator":"none","usingComponents":{"u-count-to":"/uview/components/u-count-to/u-count-to","u-popup":"/uview/components/u-popup/u-popup"}};
@@ -6318,7 +6333,7 @@ require('pages/OptimizationShop/OptimizationShop.js');
 __wxRoute = 'pages/QuKan/QuKan';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/QuKan/QuKan.js';
 
 define('pages/QuKan/QuKan.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/QuKan/QuKan"],{"0703":function(e,t,n){},"1dc9":function(e,t,n){},"5a86":function(e,t,n){"use strict";n.r(t);var a=n("6655"),o=n.n(a);for(var r in a)"default"!==r&&function(e){n.d(t,e,(function(){return a[e]}))}(r);t["default"]=o.a},6655:function(e,t,n){"use strict";(function(e,a){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var o=r(n("4795"));function r(e){return e&&e.__esModule?e:{default:e}}function s(e){return d(e)||c(e)||i(e)||u()}function u(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function i(e,t){if(e){if("string"===typeof e)return l(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(n):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?l(e,t):void 0}}function c(e){if("undefined"!==typeof Symbol&&Symbol.iterator in Object(e))return Array.from(e)}function d(e){if(Array.isArray(e))return l(e)}function l(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,a=new Array(t);n<t;n++)a[n]=e[n];return a}function g(e,t,n,a,o,r,s){try{var u=e[r](s),i=u.value}catch(c){return void n(c)}u.done?t(i):Promise.resolve(i).then(a,o)}function f(e){return function(){var t=this,n=arguments;return new Promise((function(a,o){var r=e.apply(t,n);function s(e){g(r,a,o,s,u,"next",e)}function u(e){g(r,a,o,s,u,"throw",e)}s(void 0)}))}}var m=function(){Promise.all([n.e("common/vendor"),n.e("components/jyf-parser/jyf-parser")]).then(function(){return resolve(n("0a33"))}.bind(null,n)).catch(n.oe)},h={data:function(){return{qukanTablist:["晒单评价","往期成交","趣砍规则"],qukanTablistIndex:0,value:1,goodsDetail:{},goodsId:"",socketTask:null,timer:null,recentCutUsers:[],goodsPriceNow:"获取中...",cutCount:0,second:"09",count:100,seconds:9,isFocus:"false",pageNum:0,pageSize:10,hasFlag:!0,QuKanCommentArr:[],myCount:0,isLoading:!0,recentCutUsersName:"",userId:0,richText:"",QKHistoryArr:[],QuKanCommentTotal:0,QkHisTotal:0,cutFlag:!0,errorMsg:null,phoneNumber:"",hideComment:!0,focusCount:0}},components:{"jyf-parser":m},methods:{goToShopDeatailArt:function(t,n){e.navigateTo({url:"../ShopDetailArt/ShopDeatailArt?detail="+t+"&title="+n})},handleTabIndex:function(e){var t=this;return f(o.default.mark((function n(){var a;return o.default.wrap((function(n){while(1)switch(n.prev=n.next){case 0:if(t.qukanTablistIndex=e,t.hasFlag=!0,t.pageNum=0,t.QuKanCommentArr=[],t.QKHistoryArr=[],0!=e){n.next=8;break}t.initQuKanComment(),n.next=16;break;case 8:if(1!=e){n.next=12;break}t.initQKHistory(),n.next=16;break;case 12:return n.next=14,t.$fetch(t.$api.getArticle,{id:8},"GET");case 14:a=n.sent,t.richText=a.data.content;case 16:case"end":return n.stop()}}),n)})))()},valChange:function(e){a("log",e," at pages\\QuKan\\QuKan.vue:288"),this.value=e.value},initQKHistory:function(){var e=this;return f(o.default.mark((function t(){var n;return o.default.wrap((function(t){while(1)switch(t.prev=t.next){case 0:if(e.hasFlag){t.next=2;break}return t.abrupt("return");case 2:return e.pageNum=++e.pageNum,t.next=5,e.$fetch(e.$api.getQukanHistory,{id:e.goodsId,pageNum:e.pageNum,pageSize:10},"GET","FORM");case 5:n=t.sent,a("log",n," at pages\\QuKan\\QuKan.vue:295"),e.QkHisTotal=n.total,e.QKHistoryArr=[].concat(s(e.QKHistoryArr),s(n.rows)),e.QKHistoryArr.forEach((function(e){e.savePercent=Number(100*(1-e.nowPrice/e.qukanGoods.price)).toFixed(2)})),e.hasFlag=10*e.pageNum<n.total;case 11:case"end":return t.stop()}}),t)})))()},goToBids:function(){if(0==this.second&&this.count<=0)return e.showToast({icon:"none",title:"该趣砍商品已结束, 请等待最新一期"});e.navigateTo({url:"../Bids/Bids?id="+this.goodsId})},getQuKanGoodsDetail:function(){var t=this;return f(o.default.mark((function n(){var r,s;return o.default.wrap((function(n){while(1)switch(n.prev=n.next){case 0:if(!e.getStorageSync("searchToQk")){n.next=7;break}return n.next=3,t.$fetch(t.$api.getQukanGoods,{id:t.goodsId,type:1},"GET");case 3:r=n.sent,e.removeStorageSync("searchToQk"),n.next=10;break;case 7:return n.next=9,t.$fetch(t.$api.getQukanGoods,{id:t.goodsId},"GET");case 9:r=n.sent;case 10:a("log",r," at pages\\QuKan\\QuKan.vue:325"),0!=r.code?(e.showToast({icon:"none",title:r.msg}),t.second=0,t.count=0,clearInterval(t.timer),t.timer=null,t.goodsPriceNow="已结束"):(r.data.goods.images=r.data.goods.images.split(","),t.goodsDetail=r.data.goods,t.isFocus=r.data.isFocus,t.focusCount=r.data.focusCount,s=r.data.cutList,s.forEach((function(e){e.name=e.userName,e.image=e.avatar,e.price=e.nowPrice,e.userId=e.userId})),t.recentCutUsers=s,t.goodsPriceNow=r.data.nowPrice,t.goodsId=r.data.goods.id,t.phoneNumber=r.data.phonenumber,t.connectWebSocket());case 12:case"end":return n.stop()}}),n)})))()},initTimer:function(){var e=this;null==this.timer&&(this.timer=setInterval((function(){e.count--,0==e.count&&(0==e.seconds?(e.seconds=0,e.second="00",e.count<=0&&(e.count="00",clearInterval(e.timer))):(e.count=100,e.seconds--,e.second="0"+e.seconds))}),10))},cutPrice:function(){var t=this;return 0==this.second&&this.count<=0?e.showToast({icon:"none",title:"该趣砍商品已结束, 请等待最新一期"}):this.recentCutUsers.length&&(a("log",this.recentCutUsers," at pages\\QuKan\\QuKan.vue:395"),e.getStorageSync("MyUserId")==this.recentCutUsers[0].userId)?e.showToast({icon:"none",title:"您已处于领先位置, 请耐心等候"}):0==this.second&&0==this.count?e.showToast({icon:"none",title:"该趣砍商品已结束, 请等待最新一期"}):void(this.cutFlag?e.sendSocketMessage({data:"cut:"+this.goodsId,success:function(){var n=f(o.default.mark((function n(r){var s;return o.default.wrap((function(n){while(1)switch(n.prev=n.next){case 0:return t.cutFlag=!1,a("log",t.errorMsg," at pages\\QuKan\\QuKan.vue:419"),n.next=4,t.$fetch(t.$api.checkQukanStatus,{},"GET","FORM");case 4:s=n.sent,a("log",s," at pages\\QuKan\\QuKan.vue:421"),e.showToast({icon:"none",title:s.msg}),setTimeout((function(){t.cutFlag=!0}),1500);case 8:case"end":return n.stop()}}),n)})));function r(e){return n.apply(this,arguments)}return r}()}):e.showToast({icon:"none",title:"操作过快, 请稍后再试"}))},closeWebSocket:function(){e.closeSocket({complete:function(e){a("log",e," at pages\\QuKan\\QuKan.vue:443")}})},connectWebSocket:function(){var t=this;a("log",this.goodsId," at pages\\QuKan\\QuKan.vue:448");var n=e.getStorageSync("token"),o=e.getStorageSync("userId");a("log",o," at pages\\QuKan\\QuKan.vue:451"),a("log","ws://qukan.bajiaostar.com:8082/websocket/".concat(o,"?token=").concat(n)," at pages\\QuKan\\QuKan.vue:452"),this.socketTask=e.connectSocket({url:"ws://qukan.bajiaostar.com:8082/websocket/".concat(o,"?token=").concat(n),complete:function(){a("log","成功连接"," at pages\\QuKan\\QuKan.vue:456")},fail:function(e){a("log",e," at pages\\QuKan\\QuKan.vue:459")}}),e.onSocketOpen((function(n){a("log","WebSocket连接打开成功"," at pages\\QuKan\\QuKan.vue:464"),e.sendSocketMessage({data:"enter:"+t.goodsId,success:function(e){a("log",e," at pages\\QuKan\\QuKan.vue:468")}})})),e.onSocketError((function(t){a("log","WebSocket连接打开失败，请检查！"," at pages\\QuKan\\QuKan.vue:473"),this.second=0,this.count=0,this.goodsPriceNow="已结束",clearInterval(this.timer),this.timer=null,e.showToast({icon:"none",title:"网络连接中断, 请稍后再试"}),setTimeout((function(){e.navigateBack({delta:1})}),1e3)})),e.onSocketMessage((function(n){a("log",n," at pages\\QuKan\\QuKan.vue:490");var o=JSON.parse(n.data);a("log",n.data," at pages\\QuKan\\QuKan.vue:492"),t.errorMsg=o.msg,o.goodsId==t.goodsId&&("cut"==o.command?(t.second="09",t.seconds=9,t.count=100,a("log",o," at pages\\QuKan\\QuKan.vue:500"),o.image||(o.image="../../static/image/ylc/11.png"),t.recentCutUsers.unshift({name:o.name,image:o.image,price:o.nowPrice,userId:o.userId}),t.userId=o.userId,t.recentCutUsersName=o.name,t.recentCutUsers.length>2&&t.recentCutUsers.splice(3,t.recentCutUsers.length),t.goodsPriceNow=Number(o.nowPrice).toFixed(2),o.myCount&&(t.myCount=o.myCount)):"enter"==o.command?(a("log",o," at pages\\QuKan\\QuKan.vue:519"),a("log","_______________________"," at pages\\QuKan\\QuKan.vue:520"),t.goodsId=o.goodsId,t.goodsPriceNow=o.nowPrice,t.myCount=o.myCount,t.second="0"+o.endTime,t.seconds=o.endTime):"error0"==o.command?e.getStorageSync("MyUserId")&&t.userId==e.getStorageSync("MyUserId")&&(e.showToast({icon:"none",title:o.msg}),setTimeout((function(){e.navigateBack({delta:1})}),1e3)):"error1"==o.command?e.getStorageSync("MyUserId")&&t.userId==e.getStorageSync("MyUserId")&&e.showToast({icon:"none",title:o.msg}):"order"==o.command&&(e.showToast({icon:"none",title:"竞拍结束！恭喜"+t.recentCutUsersName+"以"+t.goodsPriceNow+"砍到"}),e.getStorageSync("MyUserId")&&(a("log",t.userId," at pages\\QuKan\\QuKan.vue:567"),a("log",e.getStorageSync("MyUserId")," at pages\\QuKan\\QuKan.vue:568"),t.userId==e.getStorageSync("MyUserId")?setTimeout((function(){e.redirectTo({url:"../myOrder/myOrder?orderType=1"})}),1e3):setTimeout((function(){e.navigateBack({delta:1})}),1e3))))}))},handleChangeFocus:function(){var t=this;return f(o.default.mark((function n(){var r,s;return o.default.wrap((function(n){while(1)switch(n.prev=n.next){case 0:if("false"!=t.isFocus){n.next=9;break}return n.next=3,t.$fetch(t.$api.addFocusQukan,{id:t.goodsId},"GET");case 3:r=n.sent,a("log",r," at pages\\QuKan\\QuKan.vue:597"),e.showToast({icon:"none",title:r.msg}),0==r.code&&(t.isFocus="true"),n.next=14;break;case 9:return n.next=11,t.$fetch(t.$api.delFocusQukan,{id:t.goodsId},"GET");case 11:s=n.sent,e.showToast({icon:"none",title:s.msg}),0==s.code&&(t.isFocus="false");case 14:case"end":return n.stop()}}),n)})))()},initQuKanComment:function(){var e=this;return f(o.default.mark((function t(){var n;return o.default.wrap((function(t){while(1)switch(t.prev=t.next){case 0:if(e.hasFlag){t.next=2;break}return t.abrupt("return");case 2:return e.pageNum=++e.pageNum,t.next=5,e.$fetch(e.$api.getMarketComment,{goodsId:e.goodsId,pageNum:e.pageNum,pageSize:e.pageSize},"GET","FORM");case 5:n=t.sent,n.rows.forEach((function(t){null!=t.image&&(-1!=t.image.indexOf(",")?t.image=t.image.split(","):(t.image=[t.image],"[]"==t.image[0]&&(e.hideComment=!1)))})),e.QuKanCommentArr=[].concat(s(e.QuKanCommentArr),s(n.rows)),a("log",e.QuKanCommentArr," at pages\\QuKan\\QuKan.vue:634"),e.QuKanCommentTotal=n.total,e.hasFlag=10*e.pageNum<n.total;case 11:case"end":return t.stop()}}),t)})))()},priveImage:function(t,n){e.previewImage({urls:t,current:n})},initBidsList:function(){var e=this;return f(o.default.mark((function t(){var n;return o.default.wrap((function(t){while(1)switch(t.prev=t.next){case 0:return t.next=2,e.$fetch(e.$api.getFlowList,{id:e.goodsId},"GET");case 2:n=t.sent,a("log",n," at pages\\QuKan\\QuKan.vue:648"),n.data.forEach((function(t,n){n<3&&(t.avatar||(t.avatar="../../static/image/ylc/11.png"),e.recentCutUsersName=t.userName,e.recentCutUsers.push({name:t.userName,image:t.avatar,price:t.nowPrice}))}));case 5:case"end":return t.stop()}}),t)})))()},callPhone:function(){if(""==this.phoneNumber)return e.showToast({icon:"none",title:"暂未开通"});e.makePhoneCall({phoneNumber:this.phoneNumber})}},onReachBottom:function(){this.hasFlag&&0==this.qukanTablistIndex?this.initQuKanComment():this.hasFlag&&1==this.qukanTablistIndex&&this.initQKHistory()},onLoad:function(t){e.showLoading({title:"加载中..."}),this.goodsId=t.id,this.getQuKanGoodsDetail(),this.initTimer(),this.initQuKanComment(),this.isLoading=!1,e.hideLoading()},onUnload:function(){this.closeWebSocket(),clearInterval(this.timer)}};t.default=h}).call(this,n("6e42")["default"],n("0de9")["default"])},8382:function(e,t,n){"use strict";(function(e){n("fad5"),n("921b");a(n("66fd"));var t=a(n("cfc6"));function a(e){return e&&e.__esModule?e:{default:e}}e(t.default)}).call(this,n("6e42")["createPage"])},9325:function(e,t,n){"use strict";var a={"jyf-parser":function(){return Promise.all([n.e("common/vendor"),n.e("components/jyf-parser/jyf-parser")]).then(n.bind(null,"0a33"))}},o=function(){var e=this,t=e.$createElement;e._self._c},r=[];n.d(t,"b",(function(){return o})),n.d(t,"c",(function(){return r})),n.d(t,"a",(function(){return a}))},cfc6:function(e,t,n){"use strict";n.r(t);var a=n("9325"),o=n("5a86");for(var r in o)"default"!==r&&function(e){n.d(t,e,(function(){return o[e]}))}(r);n("d66d"),n("e35c");var s,u=n("f0c5"),i=Object(u["a"])(o["default"],a["b"],a["c"],!1,null,null,null,!1,a["a"],s);t["default"]=i.exports},d66d:function(e,t,n){"use strict";var a=n("0703"),o=n.n(a);o.a},e35c:function(e,t,n){"use strict";var a=n("1dc9"),o=n.n(a);o.a}},[["8382","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/QuKan/QuKan"],{"0703":function(e,t,n){},"1dc9":function(e,t,n){},3325:function(e,t,n){"use strict";var a={"jyf-parser":function(){return Promise.all([n.e("common/vendor"),n.e("components/jyf-parser/jyf-parser")]).then(n.bind(null,"0a33"))},"u-number-box":function(){return n.e("uview/components/u-number-box/u-number-box").then(n.bind(null,"90f9"))}},o=function(){var e=this,t=e.$createElement;e._self._c},r=[];n.d(t,"b",(function(){return o})),n.d(t,"c",(function(){return r})),n.d(t,"a",(function(){return a}))},"5a86":function(e,t,n){"use strict";n.r(t);var a=n("6655"),o=n.n(a);for(var r in a)"default"!==r&&function(e){n.d(t,e,(function(){return a[e]}))}(r);t["default"]=o.a},6655:function(e,t,n){"use strict";(function(e,a){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var o=r(n("4795"));function r(e){return e&&e.__esModule?e:{default:e}}function s(e){return d(e)||c(e)||i(e)||u()}function u(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function i(e,t){if(e){if("string"===typeof e)return l(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);return"Object"===n&&e.constructor&&(n=e.constructor.name),"Map"===n||"Set"===n?Array.from(n):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?l(e,t):void 0}}function c(e){if("undefined"!==typeof Symbol&&Symbol.iterator in Object(e))return Array.from(e)}function d(e){if(Array.isArray(e))return l(e)}function l(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,a=new Array(t);n<t;n++)a[n]=e[n];return a}function g(e,t,n,a,o,r,s){try{var u=e[r](s),i=u.value}catch(c){return void n(c)}u.done?t(i):Promise.resolve(i).then(a,o)}function f(e){return function(){var t=this,n=arguments;return new Promise((function(a,o){var r=e.apply(t,n);function s(e){g(r,a,o,s,u,"next",e)}function u(e){g(r,a,o,s,u,"throw",e)}s(void 0)}))}}var m=function(){Promise.all([n.e("common/vendor"),n.e("components/jyf-parser/jyf-parser")]).then(function(){return resolve(n("0a33"))}.bind(null,n)).catch(n.oe)},h={data:function(){return{qukanTablist:["晒单评价","往期成交","趣砍规则"],qukanTablistIndex:0,value:1,goodsDetail:{},goodsId:"",socketTask:null,timer:null,recentCutUsers:[],goodsPriceNow:"获取中...",cutCount:0,second:"09",count:100,seconds:9,isFocus:"false",pageNum:0,pageSize:10,hasFlag:!0,QuKanCommentArr:[],myCount:0,isLoading:!0,recentCutUsersName:"",userId:0,richText:"",QKHistoryArr:[],QuKanCommentTotal:0,QkHisTotal:0,cutFlag:!0,errorMsg:null,phoneNumber:"",hideComment:!0,focusCount:0}},components:{"jyf-parser":m},methods:{goToShopDeatailArt:function(t,n){e.navigateTo({url:"../ShopDetailArt/ShopDeatailArt?detail="+t+"&title="+n})},handleTabIndex:function(e){var t=this;return f(o.default.mark((function n(){var a;return o.default.wrap((function(n){while(1)switch(n.prev=n.next){case 0:if(t.qukanTablistIndex=e,t.hasFlag=!0,t.pageNum=0,t.QuKanCommentArr=[],t.QKHistoryArr=[],0!=e){n.next=8;break}t.initQuKanComment(),n.next=16;break;case 8:if(1!=e){n.next=12;break}t.initQKHistory(),n.next=16;break;case 12:return n.next=14,t.$fetch(t.$api.getArticle,{id:8},"GET");case 14:a=n.sent,t.richText=a.data.content;case 16:case"end":return n.stop()}}),n)})))()},valChange:function(e){a("log",e," at pages\\QuKan\\QuKan.vue:288"),this.value=e.value},initQKHistory:function(){var e=this;return f(o.default.mark((function t(){var n;return o.default.wrap((function(t){while(1)switch(t.prev=t.next){case 0:if(e.hasFlag){t.next=2;break}return t.abrupt("return");case 2:return e.pageNum=++e.pageNum,t.next=5,e.$fetch(e.$api.getQukanHistory,{id:e.goodsId,pageNum:e.pageNum,pageSize:10},"GET","FORM");case 5:n=t.sent,a("log",n," at pages\\QuKan\\QuKan.vue:295"),e.QkHisTotal=n.total,e.QKHistoryArr=[].concat(s(e.QKHistoryArr),s(n.rows)),e.QKHistoryArr.forEach((function(e){e.savePercent=Number(100*(1-e.nowPrice/e.qukanGoods.price)).toFixed(2)})),e.hasFlag=10*e.pageNum<n.total;case 11:case"end":return t.stop()}}),t)})))()},goToBids:function(){if(0==this.second&&this.count<=0)return e.showToast({icon:"none",title:"该趣砍商品已结束, 请等待最新一期"});e.navigateTo({url:"../Bids/Bids?id="+this.goodsId})},getQuKanGoodsDetail:function(){var t=this;return f(o.default.mark((function n(){var r,s;return o.default.wrap((function(n){while(1)switch(n.prev=n.next){case 0:if(!e.getStorageSync("searchToQk")){n.next=7;break}return n.next=3,t.$fetch(t.$api.getQukanGoods,{id:t.goodsId,type:1},"GET");case 3:r=n.sent,e.removeStorageSync("searchToQk"),n.next=10;break;case 7:return n.next=9,t.$fetch(t.$api.getQukanGoods,{id:t.goodsId},"GET");case 9:r=n.sent;case 10:a("log",r," at pages\\QuKan\\QuKan.vue:325"),0!=r.code?(e.showToast({icon:"none",title:r.msg}),t.second=0,t.count=0,clearInterval(t.timer),t.timer=null,t.goodsPriceNow="已结束"):(r.data.goods.images=r.data.goods.images.split(","),t.goodsDetail=r.data.goods,t.isFocus=r.data.isFocus,t.focusCount=r.data.focusCount,s=r.data.cutList,s.forEach((function(e){e.name=e.userName,e.image=e.avatar,e.price=e.nowPrice,e.userId=e.userId})),t.recentCutUsers=s,t.goodsPriceNow=r.data.nowPrice,t.goodsId=r.data.goods.id,t.phoneNumber=r.data.phonenumber,t.connectWebSocket());case 12:case"end":return n.stop()}}),n)})))()},initTimer:function(){var e=this;null==this.timer&&(this.timer=setInterval((function(){e.count--,0==e.count&&(0==e.seconds?(e.seconds=0,e.second="00",e.count<=0&&(e.count="00",clearInterval(e.timer))):(e.count=100,e.seconds--,e.second="0"+e.seconds))}),10))},cutPrice:function(){var t=this;return 0==this.second&&this.count<=0?e.showToast({icon:"none",title:"该趣砍商品已结束, 请等待最新一期"}):this.recentCutUsers.length&&(a("log",this.recentCutUsers," at pages\\QuKan\\QuKan.vue:395"),e.getStorageSync("MyUserId")==this.recentCutUsers[0].userId)?e.showToast({icon:"none",title:"您已处于领先位置, 请耐心等候"}):0==this.second&&0==this.count?e.showToast({icon:"none",title:"该趣砍商品已结束, 请等待最新一期"}):void(this.cutFlag?e.sendSocketMessage({data:"cut:"+this.goodsId+":"+this.value,success:function(){var n=f(o.default.mark((function n(r){var s;return o.default.wrap((function(n){while(1)switch(n.prev=n.next){case 0:return t.cutFlag=!1,a("log",t.errorMsg," at pages\\QuKan\\QuKan.vue:419"),n.next=4,t.$fetch(t.$api.checkQukanStatus,{num:t.value},"GET","FORM");case 4:s=n.sent,a("log",s," at pages\\QuKan\\QuKan.vue:421"),e.showToast({icon:"none",title:s.msg}),setTimeout((function(){t.cutFlag=!0}),1500);case 8:case"end":return n.stop()}}),n)})));function r(e){return n.apply(this,arguments)}return r}()}):e.showToast({icon:"none",title:"操作过快, 请稍后再试"}))},closeWebSocket:function(){e.closeSocket({complete:function(e){a("log",e," at pages\\QuKan\\QuKan.vue:443")}})},connectWebSocket:function(){var t=this;a("log",this.goodsId," at pages\\QuKan\\QuKan.vue:448");var n=e.getStorageSync("token"),o=e.getStorageSync("userId");a("log",o," at pages\\QuKan\\QuKan.vue:451"),a("log","ws://qukan.bajiaostar.com:8082/websocket/".concat(o,"?token=").concat(n)," at pages\\QuKan\\QuKan.vue:452"),this.socketTask=e.connectSocket({url:"ws://qukan.bajiaostar.com:8082/websocket/".concat(o,"?token=").concat(n),complete:function(){a("log","成功连接"," at pages\\QuKan\\QuKan.vue:457")},fail:function(e){a("log",e," at pages\\QuKan\\QuKan.vue:460")}}),e.onSocketOpen((function(n){a("log","WebSocket连接打开成功"," at pages\\QuKan\\QuKan.vue:465"),e.sendSocketMessage({data:"enter:"+t.goodsId,success:function(e){a("log",e," at pages\\QuKan\\QuKan.vue:469")}})})),e.onSocketError((function(t){a("log","WebSocket连接打开失败，请检查！"," at pages\\QuKan\\QuKan.vue:474"),this.second=0,this.count=0,this.goodsPriceNow="已结束",clearInterval(this.timer),this.timer=null,e.showToast({icon:"none",title:"网络连接中断, 请稍后再试"}),setTimeout((function(){e.navigateBack({delta:1})}),1e3)})),e.onSocketMessage((function(n){a("log",n," at pages\\QuKan\\QuKan.vue:491");var o=JSON.parse(n.data);a("log",n.data," at pages\\QuKan\\QuKan.vue:493"),t.errorMsg=o.msg,o.goodsId==t.goodsId&&("cut"==o.command?(t.second="09",t.seconds=9,t.count=100,a("log",o," at pages\\QuKan\\QuKan.vue:501"),o.image||(o.image="../../static/image/ylc/11.png"),t.recentCutUsers.unshift({name:o.name,image:o.image,price:o.nowPrice,userId:o.userId}),t.userId=o.userId,t.recentCutUsersName=o.name,t.recentCutUsers.length>2&&t.recentCutUsers.splice(3,t.recentCutUsers.length),t.goodsPriceNow=Number(o.nowPrice).toFixed(2),o.myCount&&(t.myCount=o.myCount)):"enter"==o.command?(a("log",o," at pages\\QuKan\\QuKan.vue:520"),a("log","_______________________"," at pages\\QuKan\\QuKan.vue:521"),t.goodsId=o.goodsId,t.goodsPriceNow=o.nowPrice,t.myCount=o.myCount,t.second="0"+o.endTime,t.seconds=o.endTime):"error0"==o.command?e.getStorageSync("MyUserId")&&t.userId==e.getStorageSync("MyUserId")&&(e.showToast({icon:"none",title:o.msg}),setTimeout((function(){e.navigateBack({delta:1})}),1e3)):"error1"==o.command?e.getStorageSync("MyUserId")&&t.userId==e.getStorageSync("MyUserId")&&e.showToast({icon:"none",title:o.msg}):"order"==o.command&&(e.showToast({icon:"none",title:"竞拍结束！恭喜"+t.recentCutUsersName+"以"+t.goodsPriceNow+"砍到"}),e.getStorageSync("MyUserId")&&(a("log",t.userId," at pages\\QuKan\\QuKan.vue:568"),a("log",e.getStorageSync("MyUserId")," at pages\\QuKan\\QuKan.vue:569"),t.userId==e.getStorageSync("MyUserId")?setTimeout((function(){e.redirectTo({url:"../myOrder/myOrder?orderType=1"})}),1e3):setTimeout((function(){e.navigateBack({delta:1})}),1e3))))}))},handleChangeFocus:function(){var t=this;return f(o.default.mark((function n(){var r,s;return o.default.wrap((function(n){while(1)switch(n.prev=n.next){case 0:if("false"!=t.isFocus){n.next=9;break}return n.next=3,t.$fetch(t.$api.addFocusQukan,{id:t.goodsId},"GET");case 3:r=n.sent,a("log",r," at pages\\QuKan\\QuKan.vue:598"),e.showToast({icon:"none",title:r.msg}),0==r.code&&(t.isFocus="true"),n.next=14;break;case 9:return n.next=11,t.$fetch(t.$api.delFocusQukan,{id:t.goodsId},"GET");case 11:s=n.sent,e.showToast({icon:"none",title:s.msg}),0==s.code&&(t.isFocus="false");case 14:case"end":return n.stop()}}),n)})))()},initQuKanComment:function(){var e=this;return f(o.default.mark((function t(){var n;return o.default.wrap((function(t){while(1)switch(t.prev=t.next){case 0:if(e.hasFlag){t.next=2;break}return t.abrupt("return");case 2:return e.pageNum=++e.pageNum,t.next=5,e.$fetch(e.$api.getMarketComment,{goodsId:e.goodsId,pageNum:e.pageNum,pageSize:e.pageSize},"GET","FORM");case 5:n=t.sent,n.rows.forEach((function(t){null!=t.image&&(-1!=t.image.indexOf(",")?t.image=t.image.split(","):(t.image=[t.image],"[]"==t.image[0]&&(e.hideComment=!1)))})),e.QuKanCommentArr=[].concat(s(e.QuKanCommentArr),s(n.rows)),a("log",e.QuKanCommentArr," at pages\\QuKan\\QuKan.vue:635"),e.QuKanCommentTotal=n.total,e.hasFlag=10*e.pageNum<n.total;case 11:case"end":return t.stop()}}),t)})))()},priveImage:function(t,n){e.previewImage({urls:t,current:n})},initBidsList:function(){var e=this;return f(o.default.mark((function t(){var n;return o.default.wrap((function(t){while(1)switch(t.prev=t.next){case 0:return t.next=2,e.$fetch(e.$api.getFlowList,{id:e.goodsId},"GET");case 2:n=t.sent,a("log",n," at pages\\QuKan\\QuKan.vue:649"),n.data.forEach((function(t,n){n<3&&(t.avatar||(t.avatar="../../static/image/ylc/11.png"),e.recentCutUsersName=t.userName,e.recentCutUsers.push({name:t.userName,image:t.avatar,price:t.nowPrice}))}));case 5:case"end":return t.stop()}}),t)})))()},callPhone:function(){if(""==this.phoneNumber)return e.showToast({icon:"none",title:"暂未开通"});e.makePhoneCall({phoneNumber:this.phoneNumber})}},onReachBottom:function(){this.hasFlag&&0==this.qukanTablistIndex?this.initQuKanComment():this.hasFlag&&1==this.qukanTablistIndex&&this.initQKHistory()},onLoad:function(t){e.showLoading({title:"加载中..."}),this.goodsId=t.id,this.getQuKanGoodsDetail(),this.initTimer(),this.initQuKanComment(),this.isLoading=!1,e.hideLoading()},onUnload:function(){this.closeWebSocket(),clearInterval(this.timer)}};t.default=h}).call(this,n("6e42")["default"],n("0de9")["default"])},8382:function(e,t,n){"use strict";(function(e){n("fad5"),n("921b");a(n("66fd"));var t=a(n("cfc6"));function a(e){return e&&e.__esModule?e:{default:e}}e(t.default)}).call(this,n("6e42")["createPage"])},cfc6:function(e,t,n){"use strict";n.r(t);var a=n("3325"),o=n("5a86");for(var r in o)"default"!==r&&function(e){n.d(t,e,(function(){return o[e]}))}(r);n("d66d"),n("e35c");var s,u=n("f0c5"),i=Object(u["a"])(o["default"],a["b"],a["c"],!1,null,null,null,!1,a["a"],s);t["default"]=i.exports},d66d:function(e,t,n){"use strict";var a=n("0703"),o=n.n(a);o.a},e35c:function(e,t,n){"use strict";var a=n("1dc9"),o=n.n(a);o.a}},[["8382","common/runtime","common/vendor"]]]);
 });
 require('pages/QuKan/QuKan.js');
 __wxRoute = 'pages/Bids/Bids';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/Bids/Bids.js';

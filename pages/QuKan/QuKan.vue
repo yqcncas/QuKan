@@ -210,7 +210,7 @@
 			</view>
 			<view class="qukan-button-right">
 				<view class="qukan-button-right-left">
-					<!-- <u-number-box :value="value" :disabled-input="true" @change="valChange" :min="1" color="#C9281C" class="number-box"></u-number-box> -->
+					<u-number-box :value="value"  @change="valChange" :min="1" color="#C9281C" class="number-box"></u-number-box>
 				</view>
 				<view class="qukan-button-right-right" @click="cutPrice">出价</view>
 			</view>
@@ -413,17 +413,18 @@
 				 
 				if (this.cutFlag) {
 					uni.sendSocketMessage({
-						data:'cut:'+this.goodsId,
+						data:'cut:'+this.goodsId + ':' + this.value,
 						success: async (res) => {
 							this.cutFlag = false
 							console.log(this.errorMsg)
-							let msg = await this.$fetch(this.$api.checkQukanStatus, {}, "GET", "FORM")
+							let msg = await this.$fetch(this.$api.checkQukanStatus, {num: this.value}, "GET", "FORM")
 							console.log(msg)
 							
 							uni.showToast({
 								icon: 'none',
 								title: msg.msg
 							})
+							this.value = 1
 							setTimeout(() => {
 								this.cutFlag = true
 							}, 1500)
@@ -452,6 +453,7 @@
 				console.log(`ws://qukan.bajiaostar.com:8082/websocket/${userId}?token=${token}`)
 				this.socketTask=uni.connectSocket({
 				  url: `ws://qukan.bajiaostar.com:8082/websocket/${userId}?token=${token}`,
+				  // url: `ws://60.180.141.124:8083/websocket/${userId}?token=${token}`,
 				  complete: () => {
 					  console.log('成功连接');
 				  },

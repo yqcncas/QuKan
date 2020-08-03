@@ -410,14 +410,11 @@
 				if (this.circleShowFlag == 1) {
 					let res = await this.$fetch(this.$api.wxAppPay, {ordnum: this.orderNum}, 'POST', 'FORM')
 					console.log(res)
-					
+					let wxpayInfo = JSON.parse(res.msg)
+					console.log(wxpayInfo)
 					uni.requestPayment({
 					    provider: 'wxpay',
-					    timeStamp: res.timestamp,
-					    nonceStr: res.noncestr,
-					    package: res.package,
-					    signType: 'MD5',
-					    paySign: res.sign,
+					    orderInfo: wxpayInfo,
 					    success: (msg) => {
 					        console.log('success:' + JSON.stringify(msg));
 					    	uni.showToast({

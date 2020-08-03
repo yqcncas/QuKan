@@ -4,13 +4,13 @@
 		"^u-(.*)": "@/uview/components/u-$1/u-$1.vue"
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		// {
-		// 	"path": "pages/Start/Start",
-		// 	"style": {
-		// 		// "navigationBarTitleText": "uni-app",
-		// 		"titleNView": "false"
-		// 	}
-		// },
+		{
+			"path": "pages/Start/Start",
+			"style": {
+				// "navigationBarTitleText": "uni-app",
+				"titleNView": "false"
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -50,6 +50,12 @@
 			"path": "pages/Market/Market",
 			"style": {
 				"navigationBarTitleText": "大市场"
+			}
+		},
+		{
+			"path": "pages/Register/Register",
+			"style": {
+				"navigationBarTitleText": "绑定手机号"
 			}
 		},
 		{
@@ -332,6 +338,16 @@
 		    "path" : "pages/ShopDetailArt/ShopDeatailArt",
 		    "style" : {
 				"navigationBarTitleText":""
+			}
+		},
+		{
+		    "path" : "pages/NewInvite/NewInvite",
+		    "style" : {
+				"navigationBarTitleText":"",
+				"navigationBarTextStyle": "white",
+				"app-plus":{
+					"titleNView": "false"
+				}
 			}
 		}
     ],

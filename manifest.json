@@ -18,7 +18,8 @@
         },
         /* 模块配置 */
         "modules" : {
-            "Payment" : {}
+            "Payment" : {},
+            "OAuth" : {}
         },
         /* 应用发布信息 */
         "distribute" : {
@@ -57,7 +58,18 @@
             "sdkConfigs" : {
                 "ad" : {},
                 "payment" : {
-                    "alipay" : {}
+                    "alipay" : {},
+                    "weixin" : {
+                        "appid" : "wx82a9075714203f65",
+                        "UniversalLinks" : "https://bajiaostar.com/"
+                    }
+                },
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx82a9075714203f65",
+                        "appsecret" : "904ef354cc8b29a804b6416d0cf0cfd5",
+                        "UniversalLinks" : "https://bajiaostar.com/"
+                    }
                 }
             },
             "icons" : {

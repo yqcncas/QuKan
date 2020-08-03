@@ -172,7 +172,7 @@
 			left: 50%;
 			transform: translateX(-50%);
 			// top: 460rpx;
-			bottom: -50rpx;
+			bottom: 1%;
 			z-index: 99;
 			
 			.lottery-center-header{

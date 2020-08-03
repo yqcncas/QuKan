@@ -76,7 +76,7 @@ page {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: -50rpx;
+  bottom: 1%;
   z-index: 99;
 }
 .lottery .lottery-center .lottery-center-header image {

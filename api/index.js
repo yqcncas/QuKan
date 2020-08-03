@@ -31,6 +31,14 @@ export default {
 	delFocusQukan: "/api/qukan/delFocusQukan", // 关注商品-移除关注商品
 	getPhonenumber: "/index/getPhonenumber", // 客服-获取客服电话
 	getMessage: "/api/mine/getMessage", //消息-获取平台消息
+	getInviteRank: "/api/index/getInviteRank", // 邀请分佣排行榜
+	updateUserCurrentAddress: "/api/mine/updateUserCurrentAddress", // 用户-更新用户当前地址
+	appPayRechargeWx: "/api/wxPay/appPayRechargeWx", // 微信app支付充值
+	
+	wxLogin: "/anon/wxLogin", // 1.微信登录
+	getPointList: "/api/mine/getPointList", // 明细-获取积分明细列表
+	
+	
 	
 	/**
 	 * 注册与登录
@@ -137,7 +145,7 @@ export default {
 	wxPay: "/api/wxPay/appPay", // 微信app支付
 	wxCodePay: "/api/wxPay/codePay", // 微信扫码支付 flag：1.订单 2.充值
 	appOrderPay: "/api/aliPay/appOrderPay", // 订单支付
-	wxAppPay: "/api/wxPay/appOrderPay", // 微信app订单支付
+	wxAppPay: "/api/wxPay/appOrderPayWx", // 微信app订单支付
 	
 	
 	/**

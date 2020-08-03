@@ -176,7 +176,7 @@
 				toChildId: '',
 				QuKanMessageArr: [], // 趣砍消息列表
 				qkTimer: null,
-				kfPhone: ''
+				kfPhone: '',
 			}
 		},
 		onLoad() {
@@ -218,7 +218,7 @@
 			this.swiperFlag = false
 			this.tabInfo = []
 			this.getIndexInfo()
-
+			
 			uni.stopPullDownRefresh()
 		},
 		mounted() {
@@ -299,8 +299,11 @@
 			// 头部跳转
 			goToTopPage (index) {
 				if (index == 0) {
-					uni.navigateTo({
-						url: '../Bargaing/Bargaing'
+					// uni.navigateTo({
+					// 	url: '../Bargaing/Bargaing'
+					// })
+					uni.switchTab({
+						url: '../Classify/Classify'
 					})
 				}
 				if (index == 1) {
@@ -328,8 +331,11 @@
 					})
 				}
 				if (index == 1) {
+					// uni.navigateTo({
+					// 	url:'../Invite/Invite'
+					// })
 					uni.navigateTo({
-						url:'../Invite/Invite'
+						url: '../NewInvite/NewInvite'
 					})
 				}
 				if(index == 2){
@@ -365,8 +371,11 @@
 			},
 			// 去邀请
 			goToInvite () {
+				// uni.navigateTo({
+				// 	url: '../Invite/Invite'
+				// })
 				uni.navigateTo({
-					url: '../Invite/Invite'
+					url: '../NewInvite/NewInvite'
 				})
 			},
 			// 获取用户信息
@@ -415,12 +424,19 @@
 			},
 			// 获取tab信息
 			async getIndexInfo () {
+		
 				let res = await this.$fetch(this.$api.getIndex, {}, "GET", "FORM")
+				
 				// console.log(res)
 				this.tabList = res.data.categoryList
+				this.tabList.forEach(item => {
+					item.childFlagId = 'childId' + item.id
+				})
 				res.data.qukanList.forEach(item =>{
 					item.time = '10'
 				})
+			
+				
 				this.QukaningShopArr = res.data.qukanList.splice(0, 3)
 				this.cutdown()
 				// 分类数据
@@ -436,13 +452,29 @@
 			//　获取分类商品
 			async getClassifyInfo () {
 				if (!this.hasFlag) return
-				console.log(this.pageNum)
+				
+				
 				this.pageNum = ++this.pageNum
+				console.log(this.pageNum)
+				
 				this.uniLoadMoreFlag = true
-				console.log(this.tabList)
-				let res = await this.$fetch(this.$api.getIndexQukanGoodsList, {pageNum: this.pageNum, pageSize: this.pageSize, id: this.tabList[this.tabIndex].id}, "GET", "FORM")
-				this.tabInfo = [...this.tabInfo, ...res.rows]
 
+				let res = await this.$fetch(this.$api.getIndexQukanGoodsList, {pageNum: this.pageNum, pageSize: this.pageSize, id: this.tabList[this.tabIndex].id}, "GET", "FORM")
+				
+				this.hasFlag = this.pageNum * 10 < res.total
+				console.log(this.hasFlag)
+				
+				this.tabInfo = [...this.tabInfo, ...res.rows]
+				// this.tabInfo.forEach((item, index) => {
+					
+				// })
+				let obj = {};
+				this.tabInfo = this.tabInfo.reduce((cur,next) => {
+				    obj[next.id] ? "" : obj[next.id] = true && cur.push(next);
+				    return cur;
+				},[]) //设置cur默认类型为数组，并且初始值为空的数组
+				console.log(this.tabInfo)
+				
 				if (this.tabInfo.length == 0) {
 					this.uniLoadMoreFlag = true
 					this.tabListHeight = 620 + 'rpx'
@@ -461,13 +493,16 @@
 					}
 					
 				}
-				this.tabInfo.forEach((item) => {
-					item.childFlagId = 'childId' + item.id
-				})
+				console.log(this.tabList)
+				
+				// this.tabInfo.forEach((item) => {
+					
+				// 	item.childFlagId = 'childId' + item.id
+				// })
 				this.swiperFlag = true
-				this.hasFlag = this.pageNum * 10 < res.total
-				console.log(this.hasFlag)
-				this.toChildId = this.tabIndex == 0 ? this.tabInfo[this.tabIndex].childFlagId : this.tabInfo[this.tabIndex - 1].childFlagId
+				
+
+				this.toChildId = this.tabIndex == 0 ? this.tabList[this.tabIndex].childFlagId : this.tabList[this.tabIndex - 1].childFlagId
 			},
 			
 			async QukaningShop () {
@@ -1013,7 +1048,8 @@
 								margin-left: 14rpx;
 								box-sizing: border-box;
 								.index-tabList-wrapper-item-center-right-left{
-									height: 84rpx;
+									// height: 84rpx;
+									height: 76rpx;
 									padding-right: 20rpx;
 									display: -webkit-box;
 									-webkit-box-orient: vertical;    

@@ -202,6 +202,7 @@
 			},
 			// 支付
 			async handleToSettle(){
+				
 				if(this.choosePayId == 1){
 					console.log(this.chooseId);
 					let res = await this.$fetch(this.$api.appPayRecharge,{id:this.chooseId, count: this.value},'POST','form')
@@ -215,6 +216,27 @@
 						},
 						fail: (err) => {
 							console.log(err);
+						}
+					})
+				} else {
+					// 微信支付
+					let res = await this.$fetch(this.$api.appPayRechargeWx,{id:this.chooseId, count: this.value},'POST','form')
+					console.log(res);
+					let wxPayInfo = JSON.parse(res.msg)
+					console.log(typeof wxPayInfo)
+					uni.requestPayment({
+					    provider: 'wxpay',
+					    orderInfo: wxPayInfo,
+						success: (res) => {
+							this.payShow = false
+							this.confirmShow = true
+						},
+						fail: (err) => {
+							console.log(err);
+							// uni.showToast({
+							// 	icon: 'none',
+							// 	title: err
+							// })
 						}
 					})
 				}

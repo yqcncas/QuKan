@@ -506,7 +506,7 @@
           box-sizing: border-box;
 }
 .index .index-tabList .index-tabList-wrapper .index-tabList-wrapper-item .index-tabList-wrapper-item-center .index-tabList-wrapper-item-center-box .index-tabList-wrapper-item-center-right .index-tabList-wrapper-item-center-right-left.data-v-4ea0055f {
-  height: 84rpx;
+  height: 76rpx;
   padding-right: 20rpx;
   display: -webkit-box;
   -webkit-box-orient: vertical;

@@ -19,6 +19,7 @@
   },
   "permissions": {
     "Payment": {},
+    "OAuth": {},
     "UniNView": {
       "description": "UniNView原生渲染"
     }
@@ -36,9 +37,10 @@
     },
     "popGesture": "close",
     "launchwebview": {
-      "id": "1",
+      "id": "2",
       "kernel": "WKWebview",
-      "uni-app": "auto"
+      "uni-app": "auto",
+      "render": "always"
     },
     "statusbar": {
       "immersed": "supportedDevice",
@@ -113,7 +115,18 @@
       "plugins": {
         "ad": {},
         "payment": {
-          "alipay": {}
+          "alipay": {},
+          "weixin": {
+            "appid": "wx82a9075714203f65",
+            "UniversalLinks": "https://bajiaostar.com/"
+          }
+        },
+        "oauth": {
+          "weixin": {
+            "appid": "wx82a9075714203f65",
+            "appsecret": "904ef354cc8b29a804b6416d0cf0cfd5",
+            "UniversalLinks": "https://bajiaostar.com/"
+          }
         },
         "audio": {
           "mp3": {
@@ -175,11 +188,7 @@
           "text": "我的"
         }
       ],
-      "height": "50px",
-      "child": [
-        "lauchwebview"
-      ],
-      "selected": 0
+      "height": "50px"
     }
   },
   "usingComponents": {}

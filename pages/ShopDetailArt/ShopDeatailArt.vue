@@ -5,14 +5,25 @@
 </template>
 
 <script>
-	import parser from "@/components/jyf-parser/jyf-parser"; 	
+	import jyfParser from "@/components/jyf-parser/jyf-parser";
 	export default {
 		onLoad(options) {
-			this.detail = options.detail
+			uni.showLoading({
+				title: '加载中'
+			})
+			if (uni.getStorageSync('DetailInfo')) {
+				this.detail = uni.getStorageSync('DetailInfo')
+				uni.removeStorageSync('DetailInfo')
+				
+			} else {
+				this.detail = options.detail
+			}
+	
 			this.title = options.title
 			uni.setNavigationBarTitle({
 				title: this.title
 			})
+			uni.hideLoading()
 		},
 		data() {
 			return {
@@ -22,8 +33,8 @@
 			}
 		},
 		components: {
-		    "jyf-parser": parser
-		}
+		    jyfParser
+	    },
 		
 	}
 </script>

@@ -101,7 +101,7 @@
 			async getFlowList(){
 				if(!this.hasFlag) return
 				this.page = ++this.page;
-				let res = await this.$fetch(this.$api.getFlowLists,{pageNum:this.page,pageSize:10,sign:this.sign,type:3},'GET')
+				let res = await this.$fetch(this.$api.getPointList,{pageNum:this.page,pageSize:10,sign:this.sign,type:3},'GET')
 				console.log(res);
 				if(res.total){
 					this.isEmpty = false

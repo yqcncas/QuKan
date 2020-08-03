@@ -17,13 +17,13 @@
 			</view>
 		</view>
 		<view class="login-button" @click="login">登录</view>
-		<view class="third-party">
+		<view class="third-party" v-if="platform == 'android'">
 			<view class="third-party-line"></view>
 			<view class="third-party-main">第三方快捷账号登录</view>
 			<view class="third-party-line"></view>
 		</view>
-		<view class="wx-login">
-			<image src="../../static/image/wx-login.png" mode=""></image>
+		<view class="wx-login" v-if="platform == 'android'">
+			<image src="../../static/image/wx-login.png" mode="aspectFill" @click="wxLogin"></image>
 		</view>
 	</view>
 </template>
@@ -34,13 +34,17 @@
 			if(uni.getStorageSync('loginName')){
 				this.userNum = uni.getStorageSync('loginName')
 			}
+			let phoneInfo = uni.getSystemInfoSync();
+			console.log(phoneInfo)
+			this.platform = phoneInfo.platform
 		},
 		data () {
 			return {
 				getYzm: true, // 判断是否点击获取验证码
 				countTimer: 60,
 				userNum: '',
-				userPwd: ''
+				userPwd: '',
+				platform: ''
 			}
 		},
 		methods: {
@@ -79,6 +83,44 @@
 						url:'../index/index'
 					})
 				}
+			},
+			wxLogin () {
+				uni.login({
+				  provider: 'weixin',
+				  success: async (loginRes)=> {
+				    console.log(loginRes.authResult.openid);
+					let res = await this.$fetch(this.$api.wxLogin, {openId: loginRes.authResult.openid}, 'GET', 'FORM')
+					console.log(res)
+					
+					if (res.code == 0) {
+						uni.showToast({
+							icon:'none',
+							title:res.msg
+						})
+		
+							uni.setStorageSync('loginName',this.userNum)
+							uni.setStorageSync('token',res.data.token)
+							uni.setStorageSync('userId',res.data.user.userId)
+							setTimeout(() => {
+								uni.reLaunch({
+									url:'../index/index'
+								})
+							}, 500)
+							
+						
+					} else {
+						uni.showToast({
+							icon: 'none',
+							title: res.msg
+						})
+						setTimeout(() => {
+							uni.navigateTo({
+								url: '../Register/Register?openId=' + loginRes.authResult.openid
+							})
+						}, 500)
+					}
+				  }
+				});
 			}
 		}
 	}

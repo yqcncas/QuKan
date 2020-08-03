@@ -269,7 +269,32 @@
 					});
 				}
 				if (this.circleShowFlag == 1) {
-					console.log('微信支付')
+					let res = await this.$fetch(this.$api.wxAppPay, {ordnum: this.ordnum}, 'POST', 'FORM')
+					console.log(res)
+					let wxpayInfo = JSON.parse(res.msg)
+					console.log(wxpayInfo)
+					uni.requestPayment({
+					    provider: 'wxpay',
+					    orderInfo: wxpayInfo,
+					    success: (msg) => {
+					        console.log('success:' + JSON.stringify(msg));
+							uni.showToast({
+								icon: 'none',
+								title: '支付成功'
+							})
+							this.showPayPopFlag = false
+							this.orderDetailInfo.status = 1
+							// if (this.type == 2) {
+								uni.setStorageSync('paySuccess', this.orderIndex)
+							// } 
+					    },
+					    fail: function (err) {
+							uni.showToast({
+								icon: 'none',
+								title: '支付失败'
+							})
+					    }
+					});
 				}
 			},
 			// 取消

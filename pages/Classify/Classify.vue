@@ -30,8 +30,8 @@
 									<text class="classify-list-wrapper-item-center-right">{{item.title}}</text>
 								</view>
 								<view class="classify-list-wrapper-item-price">
-									<view class="index-tabList-wrapper-item-price-left">¥{{item.price}}</view>
-									<view class="index-tabList-wrapper-item-price-right">原价¥{{item.nowPrice}}</view>
+									<view class="index-tabList-wrapper-item-price-left">¥{{item.nowPrice}}</view>
+									<view class="index-tabList-wrapper-item-price-right">原价¥{{item.price}}</view>
 								</view>
 								<view class="classify-list-wrapper-item-bottom">立即趣砍</view>
 							</view>
@@ -190,7 +190,6 @@
 				.classify-header-bottom-ul{
 					width: 100%;
 					height: 90rpx;
-					overflow: hidden;
 					display: inline-block;
 					white-space: nowrap;
 					.classify-header-bottom-item{

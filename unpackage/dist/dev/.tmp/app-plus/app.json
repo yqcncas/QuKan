@@ -4,6 +4,7 @@
     "pages/Classify/Classify",
     "pages/Find/Find",
     "pages/Market/Market",
+    "pages/Register/Register",
     "pages/My/My",
     "pages/My/userInfo",
     "pages/My/editUserName",
@@ -39,7 +40,8 @@
     "pages/Punch/Punch",
     "pages/article/article",
     "pages/My/bindUp",
-    "pages/ShopDetailArt/ShopDeatailArt"
+    "pages/ShopDetailArt/ShopDeatailArt",
+    "pages/NewInvite/NewInvite"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -85,6 +87,18 @@
         "text": "我的"
       }
     ]
+  },
+  "nvue": {
+    "pages": {
+      "pages/Start/Start.html": {
+        "window": {
+          "usingComponents": {},
+          "titleNView": "false"
+        },
+        "nvue": true
+      }
+    },
+    "entryPagePath": "pages/Start/Start"
   },
   "nvueCompiler": "uni-app",
   "renderer": "auto",

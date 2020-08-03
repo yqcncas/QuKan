@@ -74,13 +74,15 @@
 								<image :src="item.image" mode=""></image>
 							</view>
 							<view class="pay-price-rank-center-user-name">{{item.name}}</view>
+							<view class="pay-price-rank-center-user-name">{{item.address}}</view>
+							<!-- <view class="pay-price-rank-center-user-name">{{item.name}}</view> -->
 							<view class="pay-price-rank-center-user-price">¥{{item.price}}</view>
 						</view>
 					</view>
 				</view>
 				<view class="pay-price-rank-bottom">
 					<image src="../../static/image/ych/qukan/bianzu1.png" mode=""></image>
-					<view class="pay-price-rank-bottom-pay">已消耗<span>{{myCount}}</span>趣币/赠币</view>
+					<view class="pay-price-rank-bottom-pay">已消耗<span>{{myCount}}</span>趣豆/赠豆</view>
 				</view>
 			</view>
 			<view class="line-30"></view>
@@ -107,14 +109,14 @@
 				<view class="qukan-introduce-left">
 					<view class="qukan-introduce-left-item">
 						<text>起砍价</text>
-						<text>¥{{goodsDetail.price}}</text>
+						<text>¥{{goodsDetail.nowPrice}}</text>
 					</view>
 					<view class="qukan-introduce-left-item">
 						<text>网服费</text>
-						<text>¥1趣币</text>
+						<text>¥1趣豆</text>
 					</view>
 					<view class="qukan-introduce-left-item">
-						<text>退币比例</text>
+						<text>退豆比例</text>
 						<text>100%</text>
 					</view>
 					
@@ -194,12 +196,12 @@
 		
 		<view class="qukan-button-wrapper">
 			<view class="qukan-button-left">
-				<view class="qukan-button-left-item" @click.stop="callPhone">
+			<!-- 	<view class="qukan-button-left-item" @click.stop="callPhone">
 					<view class="qukan-button-left-item-top">
 						<image src="../../static/image/phone.png" mode=""></image>
 					</view>
 					<view class="qukan-button-left-item-bottom">电话</view>
-				</view>	
+				</view>	 -->
 				<view class="qukan-button-left-item" @click="handleChangeFocus">
 					<view class="qukan-button-left-item-top">
 						<image src="../../static/image/bianzu10.png" mode="" v-if="isFocus == 'false'"></image>
@@ -225,7 +227,7 @@
 			return {
 				qukanTablist: ['晒单评价', '往期成交', '趣砍规则'],
 				qukanTablistIndex: 0,
-				value:1,
+				value:5,
 				goodsDetail:{},
 				goodsId:'',
 				socketTask:null,
@@ -262,9 +264,24 @@
 		methods: {
 			// 去商品详情
 			goToShopDeatailArt (info, title) {
+				console.log(info)
+				uni.setStorageSync('DetailInfo', info)
 				uni.navigateTo({
-					url: '../ShopDetailArt/ShopDeatailArt?detail=' + info + "&title=" + title
+					url: '../ShopDetailArt/ShopDeatailArt?detail=' + '' + "&title=" + title
 				})
+			},
+			// 当前定位
+			initGetLocation () {
+				uni.getLocation({
+				    type: 'wgs84',
+					"geocode": true,
+				    success:async (res) => {
+				        console.log(res);
+				        // console.log('当前位置的纬度：' + res.latitude);
+						let address = res.address.province + res.address.city 
+						let msg = await this.$fetch(this.$api.updateUserCurrentAddress, {address: address}, "GET", 'FORM')
+				    }
+				});
 			},
 			// 更换tab
 			async handleTabIndex (index) {
@@ -346,8 +363,12 @@
 						item.price = item.nowPrice
 						item.userId = item.userId
 					})
-					
 					this.recentCutUsers = newRecentCutUsers
+					console.log('****************************')
+					for (let i = 0; i < this.recentCutUsers.length; i++) {
+						this.recentCutUsers[i].address = res.data.addressList[i].remark
+					}
+					console.log(this.recentCutUsers)
 					this.goodsPriceNow = res.data.nowPrice
 					this.goodsId = res.data.goods.id
 					this.phoneNumber = res.data.phonenumber
@@ -413,7 +434,7 @@
 				 
 				if (this.cutFlag) {
 					uni.sendSocketMessage({
-						data:'cut:'+this.goodsId + ':' + this.value,
+						data:'buy:'+this.goodsId + ':' + this.value,
 						success: async (res) => {
 							this.cutFlag = false
 							console.log(this.errorMsg)
@@ -503,7 +524,7 @@
 							if(!dataObject.image){
 								dataObject.image = '../../static/image/ylc/11.png'
 							}
-							this.recentCutUsers.unshift({"name":dataObject.name,"image":dataObject.image,"price":dataObject.nowPrice, "userId": dataObject.userId})
+							this.recentCutUsers.unshift({"name":dataObject.name,"image":dataObject.image,"price":dataObject.nowPrice, "userId": dataObject.userId, "address":  dataObject.address})
 							this.userId = dataObject.userId
 							this.recentCutUsersName = dataObject.name
 							if (this.recentCutUsers.length > 2) {
@@ -683,6 +704,7 @@
 			})
 			this.goodsId = options.id
 			// this.initBidsList()
+			this.initGetLocation()
 			this.getQuKanGoodsDetail()
 			this.initTimer()
 			// this.connectWebSocket()
@@ -978,11 +1000,12 @@
 				}
 				.pay-price-rank-center{
 					width: 100%;
-					height: 288rpx;
+					// height: 288rpx;
 					display: flex;
 					.pay-price-rank-center-item{
 						width: 222rpx;
-						height: 288rpx;
+						// height: 288rpx;
+						padding-bottom: 10rpx;
 						position: relative;
 						background-image: linear-gradient(0deg, rgba(235,235,235,0.10) 0%, #EBEBEB 100%);
 						border-radius: 4px;
@@ -1051,7 +1074,7 @@
 				.pay-price-rank-bottom{
 					display: flex;
 					align-items: center;
-					padding-top: 44rpx;
+					padding-top: 37rpx;
 					box-sizing: border-box;
 					image{
 						width: 42rpx;
@@ -1340,7 +1363,7 @@
 			z-index: 99;
 			.qukan-button-left{
 				display: flex;
-				padding-left: 50rpx;
+				padding-left: 60rpx;
 				padding-top: 12rpx;
 				padding-bottom: 4rpx;
 				box-sizing: border-box;
@@ -1378,7 +1401,7 @@
 					font-size: 14px;
 					color: #FFFFFF;
 					letter-spacing: -0.34px;
-					width: 210rpx;
+					width: 310rpx;
 					height: 100%;
 					line-height: 100rpx;
 					text-align: center;
